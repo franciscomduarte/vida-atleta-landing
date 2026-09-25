@@ -120,7 +120,7 @@ generators.footer = () => `
     </div>
     <div class="site-footer__bottom">
       <p>© 2026 Vida Atleta.</p>
-      <p>Telas do app com dados de demonstração. Fotos: Kindel Media, Juli Ane e Vijay Richhiya, via Pexels.</p>
+      <p>Fotos: Kindel Media, Juli Ane e Vijay Richhiya, via Pexels.</p>
     </div>`;
 
 generators.launch = () => {
