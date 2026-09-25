@@ -1,0 +1,74 @@
+{
+  "hero-agua": {
+    "origem": "foto-licenciada",
+    "fonte": "Pexels",
+    "licenca": "Licença Pexels (uso comercial livre)",
+    "credito": "Juli Ane",
+    "perfil": "https://www.pexels.com/pt-br/@juli-ane-351889530/",
+    "pexelsId": 31049378,
+    "descricao": "Cordão de raia com boias em piscina, reflexos na água. Sem pessoas.",
+    "pessoas": false,
+    "semMenoresComprovado": false,
+    "aprovacaoUsoImagem": "autorizada pelo responsável do projeto (2026-09-25); comprovação de idade não disponível, por isso só recortes sem rosto identificável",
+    "width": 1920,
+    "height": 1000,
+    "variants": {
+      "hero-agua-800.avif": 15988,
+      "hero-agua-800.webp": 25274,
+      "hero-agua-1600.avif": 31543,
+      "hero-agua-1600.webp": 58972
+    },
+    "widths": [
+      800,
+      1600
+    ]
+  },
+  "aerea-raias": {
+    "origem": "foto-licenciada",
+    "fonte": "Pexels",
+    "licenca": "Licença Pexels (uso comercial livre)",
+    "credito": "Vijay Richhiya",
+    "perfil": "https://www.pexels.com/pt-br/@vijay-richhiya-2155208704/",
+    "pexelsId": 36018788,
+    "descricao": "Piscina de 8 raias vista de cima; figuras pequenas e não identificáveis. Recorte exclui as lonas com marca.",
+    "pessoas": "anônimas, em escala mínima",
+    "semMenoresComprovado": false,
+    "aprovacaoUsoImagem": "autorizada pelo responsável do projeto (2026-09-25); comprovação de idade não disponível, por isso só recortes sem rosto identificável",
+    "width": 1080,
+    "height": 1404,
+    "variants": {
+      "aerea-raias-640.avif": 17048,
+      "aerea-raias-640.webp": 29556,
+      "aerea-raias-1080.avif": 37885,
+      "aerea-raias-1080.webp": 70980
+    },
+    "widths": [
+      640,
+      1080
+    ]
+  },
+  "nadador-aereo": {
+    "origem": "foto-licenciada",
+    "fonte": "Pexels",
+    "licenca": "Licença Pexels (uso comercial livre)",
+    "credito": "Kindel Media",
+    "perfil": "https://www.pexels.com/pt-br/@kindelmedia/",
+    "pexelsId": 8688609,
+    "descricao": "Nadador adulto em vista aérea, sem rosto identificável na escala usada; sob sobreposição azul.",
+    "pessoas": "uma pessoa, vista aérea, sem rosto identificável",
+    "semMenoresComprovado": false,
+    "aprovacaoUsoImagem": "autorizada pelo responsável do projeto (2026-09-25); comprovação de idade não disponível, por isso só recortes sem rosto identificável",
+    "width": 1920,
+    "height": 1150,
+    "variants": {
+      "nadador-aereo-800.avif": 59055,
+      "nadador-aereo-800.webp": 85378,
+      "nadador-aereo-1600.avif": 172848,
+      "nadador-aereo-1600.webp": 265498
+    },
+    "widths": [
+      800,
+      1600
+    ]
+  }
+}

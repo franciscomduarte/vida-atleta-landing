@@ -1,0 +1,110 @@
+{
+  "hero-resultados": {
+    "source": "A1b-hero-tabela.png",
+    "sha256": "b81bc65e94d3148f434ede16bc7e81f8a4130762f17ee921b08b3942ebc4f68c",
+    "width": 780,
+    "height": 1520,
+    "variants": {
+      "hero-resultados-390.avif": 18052,
+      "hero-resultados-390.webp": 26518,
+      "hero-resultados-780.avif": 31343,
+      "hero-resultados-780.webp": 65178
+    }
+  },
+  "ato2-calendario": {
+    "source": "A2-calendario.png",
+    "sha256": "db162a761cd6ba1502885e4dfa555574cf9eca9b86af152c238664cecca06ec7",
+    "width": 780,
+    "height": 1420,
+    "variants": {
+      "ato2-calendario-390.avif": 15517,
+      "ato2-calendario-390.webp": 25728,
+      "ato2-calendario-780.avif": 25820,
+      "ato2-calendario-780.webp": 58606
+    }
+  },
+  "ato2-evento": {
+    "source": "A3-detalhe-evento.png",
+    "sha256": "a963e83d2c38e3a036057eb41eb52832f4fc388698ccdd1fc000c79ac43bad83",
+    "width": 780,
+    "height": 1420,
+    "variants": {
+      "ato2-evento-390.avif": 11287,
+      "ato2-evento-390.webp": 19280,
+      "ato2-evento-780.avif": 18787,
+      "ato2-evento-780.webp": 46292
+    }
+  },
+  "ato2-resultados": {
+    "source": "A1-resultados-prova.png",
+    "sha256": "9e5211260be17455c9b517ecf30446e8adfec6d8bbdcd60ab19581907504e579",
+    "width": 780,
+    "height": 1420,
+    "variants": {
+      "ato2-resultados-390.avif": 13794,
+      "ato2-resultados-390.webp": 20904,
+      "ato2-resultados-780.avif": 23012,
+      "ato2-resultados-780.webp": 48690
+    }
+  },
+  "ato3-parciais": {
+    "source": "A5g-parciais-grafico.png",
+    "sha256": "cea46c1959ed3c1eee55c073fbd4869334707fd42d393aa59451554fd31d19a3",
+    "width": 756,
+    "height": 1950,
+    "variants": {
+      "ato3-parciais-390.avif": 17313,
+      "ato3-parciais-390.webp": 26862,
+      "ato3-parciais-780.avif": 35972,
+      "ato3-parciais-780.webp": 61776
+    }
+  },
+  "ato3-parciais-tabela": {
+    "source": "A5-parciais.png",
+    "sha256": "e0909139b57bc3660fd778eaad6a88419d7dd87a6f0acd451f124a7a75267b57",
+    "width": 756,
+    "height": 850,
+    "variants": {
+      "ato3-parciais-tabela-390.avif": 9270,
+      "ato3-parciais-tabela-390.webp": 13862,
+      "ato3-parciais-tabela-780.avif": 19297,
+      "ato3-parciais-tabela-780.webp": 31348
+    }
+  },
+  "ato5-medalhas": {
+    "source": "A6-medalhas.png",
+    "sha256": "37b73ff77ab26ec9c0b0358a6ceee418880bec5ee59500069059c5fbff263e42",
+    "width": 780,
+    "height": 1380,
+    "variants": {
+      "ato5-medalhas-390.avif": 13561,
+      "ato5-medalhas-390.webp": 21290,
+      "ato5-medalhas-780.avif": 21977,
+      "ato5-medalhas-780.webp": 47068
+    }
+  },
+  "ato5-boletins": {
+    "source": "A7-boletins.png",
+    "sha256": "929359562689b7eb911d22f4a879827a98c25e12dcbc50a6f0f2af31782fc4cc",
+    "width": 780,
+    "height": 760,
+    "variants": {
+      "ato5-boletins-390.avif": 8925,
+      "ato5-boletins-390.webp": 14284,
+      "ato5-boletins-780.avif": 15048,
+      "ato5-boletins-780.webp": 33634
+    }
+  },
+  "ato5-calculadora": {
+    "source": "A8-calculadora.png",
+    "sha256": "5c6fd502d55d7bce42c02bfbe1a69784bbb4740fb0dc838c3c3e5fca83e48ba4",
+    "width": 780,
+    "height": 1190,
+    "variants": {
+      "ato5-calculadora-390.avif": 9687,
+      "ato5-calculadora-390.webp": 15858,
+      "ato5-calculadora-780.avif": 16721,
+      "ato5-calculadora-780.webp": 35280
+    }
+  }
+}

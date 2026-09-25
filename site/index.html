@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="pt-BR" data-cta-mode="presentation" data-tempo-mode="captura" data-preview="true" data-motion-qa="true" data-motion-plus="false">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vida Atleta: o aplicativo da CBDA para acompanhar a natação</title>
+
+<meta name="description" content="Conheça o Vida Atleta, o aplicativo da CBDA integrado ao SGE: calendário, eventos, provas, raias, parciais e resultados oficiais da natação brasileira. Em fase de lançamento.">
+
+<meta name="theme-color" content="#0d3e90">
+<!-- canonical e og:image: definir siteUrl em site.config.json (URL final ainda pendente) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Vida Atleta: o aplicativo da CBDA para acompanhar a natação">
+<meta property="og:description" content="O resultado nasce na água. Agora chega até você: calendário, provas, raias, parciais e resultados oficiais da natação brasileira.">
+
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" type="image/avif" href="assets/photo/hero-agua-800.avif" imagesrcset="assets/photo/hero-agua-800.avif 800w, assets/photo/hero-agua-1600.avif 1600w" imagesizes="100vw">
+<link rel="preload" href="fonts/rubik-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O que é o Vida Atleta?","acceptedAnswer":{"@type":"Answer","text":"É o aplicativo da CBDA, integrado ao Sistema de Gestão Esportiva (SGE), para acompanhar calendário, eventos, programas de provas, séries, raias, parciais e resultados oficiais da natação brasileira. Faz parte da nova era digital da CBDA."}},{"@type":"Question","name":"É o canal oficial da CBDA?","acceptedAnswer":{"@type":"Answer","text":"Sim. O Vida Atleta é o aplicativo da CBDA e a porta de entrada para as informações oficiais do esporte, com dados que vêm direto do SGE, o sistema que organiza as competições."}},{"@type":"Question","name":"Por que usar o Vida Atleta e não outro aplicativo?","acceptedAnswer":{"@type":"Answer","text":"Porque a informação é oficial e vem direto da fonte. Balizamento, raias, tempos e resultados seguem do SGE para os canais oficiais e para o app, sem depender de copiar dados de outro lugar."}},{"@type":"Question","name":"Quais funcionalidades o app tem?","acceptedAnswer":{"@type":"Answer","text":"Calendário de eventos, detalhe do evento e programa de provas, resultados com pódio, raia e tempo, parciais em gráfico e tabela, quadro de medalhas, clubes e atletas inscritos, boletins oficiais, notícias, calculadora de pontuação, favoritos de evento e notificações públicas opcionais."}},{"@type":"Question","name":"Todas as provas têm parciais?","acceptedAnswer":{"@type":"Answer","text":"Não. As parciais aparecem quando são publicadas para a prova. Quando existem, o app mostra o ritmo trecho a trecho, em gráfico ou tabela, e compara com o recorde."}},{"@type":"Question","name":"Que dados dos atletas aparecem?","acceptedAnswer":{"@type":"Answer","text":"O nome público e o clube. O app não exibe CPF, nascimento completo, contato ou foto do atleta."}},{"@type":"Question","name":"Quando o app estará disponível?","acceptedAnswer":{"@type":"Answer","text":"O Vida Atleta está em fase de lançamento. As informações sobre disponibilidade serão divulgadas pela CBDA."}},{"@type":"Question","name":"Como será o acesso?","acceptedAnswer":{"@type":"Answer","text":"Quando o app for liberado, o acesso será por conta Google, Apple (no iPhone) ou e-mail, com um perfil mínimo e o aceite dos termos."}},{"@type":"Question","name":"O que mais a CBDA está fazendo além do app?","acceptedAnswer":{"@type":"Answer","text":"O Vida Atleta é a face mais visível de um movimento: nova geração do software de gestão de competições de natação, novo MAR para águas abertas, novo sistema de polo aquático em testes, área de estatísticas e inteligência esportiva e novos sites para a CBDA e as federações."}}]}</script>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<aside class="preview-bar" aria-label="Aviso de prévia interna">Prévia interna · não publicar</aside>
+
+<div class="progress-bar" aria-hidden="true"></div>
+
+<header class="site-header" id="topo">
+  <div class="container site-header__in">
+    <a class="lockup" href="#inicio" aria-label="Vida Atleta, início">
+      <img class="lockup__symbol" src="assets/img/symbol.svg" width="34" height="30" alt="">
+      <span class="lockup__text">Vida Atleta</span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#a-prova">Como funciona</a>
+
+      <a href="#tempo-por-dentro">Parciais</a>
+
+      <a href="#fonte-dos-dados">Dados oficiais</a>
+      <a href="#nova-era">Nova era</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <a class="btn btn--primary btn--sm site-header__cta" href="#a-prova">Ver como funciona</a>
+
+
+
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-sheet" aria-label="Abrir menu">
+      <span class="menu-btn__bars" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<div class="sheet" id="menu-sheet" hidden>
+  <div class="sheet__panel" role="dialog" aria-modal="true" aria-label="Menu">
+    <nav aria-label="Menu principal">
+      <a href="#a-prova">Como funciona</a>
+
+      <a href="#tempo-por-dentro">Parciais</a>
+
+      <a href="#fonte-dos-dados">Dados oficiais</a>
+      <a href="#nova-era">Nova era</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <a class="btn btn--primary btn--block" href="#a-prova">Ver como funciona</a>
+
+
+
+    <button class="sheet__close" type="button">Fechar</button>
+  </div>
+</div>
+
+<main id="conteudo">
+
+<!-- 1. HERO -->
+<section class="hero" id="inicio" aria-labelledby="h1">
+  <div class="sbg" aria-hidden="true"><div class="sbg__photo" data-parallax="0.12"><picture><source type="image/avif" srcset="assets/photo/hero-agua-800.avif 800w, assets/photo/hero-agua-1600.avif 1600w" sizes="100vw"><source type="image/webp" srcset="assets/photo/hero-agua-800.webp 800w, assets/photo/hero-agua-1600.webp 1600w" sizes="100vw"><img class="photo" src="assets/photo/hero-agua-1600.webp" width="1920" height="1000" alt="" fetchpriority="high" decoding="async"></picture></div><div class="water"><i></i><i></i></div><div class="sbg__shade sbg__shade--hero"></div></div>
+  <div class="hero__lanes" aria-hidden="true"></div>
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow">O canal oficial da CBDA · Nova era digital</p>
+      <h1 id="h1">O resultado nasce na água. Agora chega até você.</h1>
+      <span class="friso" aria-hidden="true"></span>
+      <p class="lead">O Vida Atleta é o canal oficial da CBDA para acompanhar a natação. Calendário, eventos, programas de provas, séries, raias e resultados, direto do SGE, o sistema que organiza as competições, no seu celular.</p>
+      <div class="hero__actions">
+
+        <a class="btn btn--primary" href="#a-prova" aria-label="Ver como funciona: o passo a passo do evento ao resultado">Ver como funciona<svg class="btn__arrow" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+
+
+
+        <span class="pill">Em fase de lançamento</span>
+        <a class="link-quiet" href="#fonte-dos-dados">Dados oficiais</a>
+      </div>
+      <p class="tasks">Para atletas, famílias, treinadores, clubes, federações e torcedores.</p>
+      <ol class="trail" aria-label="Caminho no app">
+        <li>Evento</li><li>Prova</li><li>Raia</li><li class="time-highlight">Tempo</li>
+      </ol>
+    </div>
+    <div class="hero__phone" data-reveal="mask">
+      <figure class="phone phone--hero">
+        <picture><source type="image/avif" srcset="assets/app/hero-resultados-390.avif 390w, assets/app/hero-resultados-780.avif 780w" sizes="(min-width: 900px) 420px, 82vw"><source type="image/webp" srcset="assets/app/hero-resultados-390.webp 390w, assets/app/hero-resultados-780.webp 780w" sizes="(min-width: 900px) 420px, 82vw"><img class="phone__img" src="assets/app/hero-resultados-780.webp" width="780" height="1520" alt="Tela de resultados de uma prova no app: colocação, raia, atleta, clube e tempo em minutos, segundos e centésimos. Dados de demonstração." fetchpriority="high" decoding="async"></picture>
+      </figure>
+      <div class="sr-only"><table><caption>Resultados de uma prova (dados de demonstração)</caption><thead><tr><th>Colocação</th><th>Raia</th><th>Participante</th><th>Clube</th><th>Tempo</th></tr></thead><tbody><tr><td>1º</td><td>4</td><td>Atleta demonstração 01</td><td>Clube demonstração 01</td><td>1:00.00</td></tr><tr><td>2º</td><td>5</td><td>Atleta demonstração 02</td><td>Clube demonstração 02</td><td>1:01.00</td></tr><tr><td>3º</td><td>3</td><td>Atleta demonstração 03</td><td>Clube demonstração 03</td><td>1:02.00</td></tr><tr><td>4º</td><td>6</td><td>Atleta demonstração 04</td><td>Clube demonstração 01</td><td>1:03.00</td></tr><tr><td>5º</td><td>2</td><td>Atleta demonstração 05</td><td>Clube demonstração 02</td><td>1:04.00</td></tr><tr><td>6º</td><td>7</td><td>Atleta demonstração 06</td><td>Clube demonstração 03</td><td>1:05.00</td></tr><tr><td>7º</td><td>1</td><td>Atleta demonstração 07</td><td>Clube demonstração 01</td><td>1:06.00</td></tr><tr><td>8º</td><td>8</td><td>Atleta demonstração 08</td><td>Clube demonstração 02</td><td>1:07.00</td></tr></tbody></table></div>
+      <p class="cap">Telas do app com dados de demonstração.</p>
+    </div>
+  </div>
+  <div class="rope" aria-hidden="true"></div>
+</section>
+
+<!-- 2. PROBLEMA -->
+<section class="problem" id="problema" aria-labelledby="h-problema">
+  <div class="sbg" aria-hidden="true"><div class="water water--ink"><i></i><i></i></div></div>
+  <div class="container problem__grid">
+    <div class="problem__copy">
+      <p class="eyebrow eyebrow--ink">Da competição à comunidade</p>
+      <h2 id="h-problema">A informação nasce na piscina. Só falta chegar até você.</h2>
+      <span class="friso friso--royal" data-reveal aria-hidden="true"></span>
+      <p>Encontrar a próxima competição, abrir a prova e conferir o resultado costumava exigir várias páginas, filtros e documentos difíceis de consultar no celular.</p>
+      <p class="legend">No Vida Atleta, a informação oficial que nasce na competição chega à comunidade com mais velocidade, contexto e facilidade de acesso.</p>
+    </div>
+    <div class="scene" data-reveal="scene">
+      <p class="scene__tag scene__tag--before">Antes: procurar em vários lugares.</p>
+      <ul class="frags">
+        <li class="frag" style="--r:-2deg;--x:-14px;--y:10px"><span class="frag__bar"></span><span class="frag__l frag__l--a"></span><span class="frag__l"></span><span class="frag__name">Página do evento</span></li>
+        <li class="frag" style="--r:1.5deg;--x:12px;--y:-8px"><span class="frag__chips"><i></i><i></i><i></i></span><span class="frag__l frag__l--a"></span><span class="frag__name">Filtros</span></li>
+        <li class="frag" style="--r:2deg;--x:-8px;--y:14px"><span class="frag__doc"></span><span class="frag__l"></span><span class="frag__l frag__l--a"></span><span class="frag__name">Boletim</span></li>
+        <li class="frag" style="--r:-1.5deg;--x:16px;--y:-12px"><span class="frag__grid"><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="frag__name">Tabela de resultados</span></li>
+      </ul>
+      <span class="scene__lane" aria-hidden="true"></span>
+      <div class="scene__flow">
+        <figure class="phone phone--mini">
+          <picture><source type="image/avif" srcset="assets/app/ato2-calendario-390.avif 390w, assets/app/ato2-calendario-780.avif 780w" sizes="(min-width: 900px) 220px, 60vw"><source type="image/webp" srcset="assets/app/ato2-calendario-390.webp 390w, assets/app/ato2-calendario-780.webp 780w" sizes="(min-width: 900px) 220px, 60vw"><img class="phone__img" src="assets/app/ato2-calendario-780.webp" width="780" height="1420" alt="Tela do calendário de eventos do app, com temporada, busca e filtros. Dados de demonstração." loading="lazy" decoding="async"></picture>
+        </figure>
+        <p class="scene__tag scene__tag--after">Agora: evento → prova → resultado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="rope rope--on-canvas" aria-hidden="true"></div>
+
+<!-- 3. A PROVA -->
+<section class="prova" id="a-prova" data-step="1" aria-labelledby="h-prova">
+  <div class="sbg" aria-hidden="true"><div class="sbg__photo sbg__photo--prova" data-parallax="0.08"><picture><source type="image/avif" srcset="assets/photo/aerea-raias-640.avif 640w, assets/photo/aerea-raias-1080.avif 1080w" sizes="100vw"><source type="image/webp" srcset="assets/photo/aerea-raias-640.webp 640w, assets/photo/aerea-raias-1080.webp 1080w" sizes="100vw"><img class="photo" src="assets/photo/aerea-raias-1080.webp" width="1080" height="1404" alt="" loading="lazy" decoding="async"></picture></div><div class="water"><i></i><i></i></div><div class="sbg__shade sbg__shade--prova"></div></div>
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow">Como funciona</p>
+      <h2 id="h-prova">Da competição ao resultado, em poucos passos.</h2>
+      <span class="friso" data-reveal aria-hidden="true"></span>
+    </header>
+    <div class="prova__grid">
+      <ol class="steps">
+        <li class="step" data-step="1">
+          <span class="step__num" aria-hidden="true" data-parallax="-0.05">01</span>
+          <p class="step__label time-highlight">Passo 01</p>
+          <h3>Encontre a próxima competição.</h3>
+          <p>O calendário reúne os eventos da temporada. Busque pelo nome, filtre e veja o que está acontecendo agora, o que vem por aí e o que já terminou.</p>
+          <figure class="phone step__shot">
+            <picture><source type="image/avif" srcset="assets/app/ato2-calendario-390.avif 390w, assets/app/ato2-calendario-780.avif 780w" sizes="(min-width: 900px) 360px, 82vw"><source type="image/webp" srcset="assets/app/ato2-calendario-390.webp 390w, assets/app/ato2-calendario-780.webp 780w" sizes="(min-width: 900px) 360px, 82vw"><img class="phone__img" src="assets/app/ato2-calendario-780.webp" width="780" height="1420" alt="Calendário de eventos do app: temporada, busca por nome, filtros e um evento com a situação Acontecendo agora. Dados de demonstração." loading="lazy" decoding="async"></picture>
+          </figure>
+          <div class="sr-only"><ul><li>Festival Aquático de Demonstração, 1 a 2 de Setembro, 2026, Acontecendo agora, Centro Aquático de Teste · Brasília, DF</li></ul></div>
+        </li>
+        <li class="step" data-step="2">
+          <span class="step__num" aria-hidden="true" data-parallax="-0.05">02</span>
+          <p class="step__label time-highlight">Passo 02</p>
+          <h3>Abra o evento.</h3>
+          <p>Local no mapa, organização e piscina. O programa mostra cada prova, com o número de séries e de atletas.</p>
+          <figure class="phone step__shot">
+            <picture><source type="image/avif" srcset="assets/app/ato2-evento-390.avif 390w, assets/app/ato2-evento-780.avif 780w" sizes="(min-width: 900px) 360px, 82vw"><source type="image/webp" srcset="assets/app/ato2-evento-390.webp 390w, assets/app/ato2-evento-780.webp 780w" sizes="(min-width: 900px) 360px, 82vw"><img class="phone__img" src="assets/app/ato2-evento-780.webp" width="780" height="1420" alt="Detalhe de um evento no app: local, organização, tipo de piscina e programa de provas. Dados de demonstração." loading="lazy" decoding="async"></picture>
+          </figure>
+          <div class="sr-only"><ul><li>Prova 1: 50 metros peito masculino, 1 série · 8 atletas, Concluída</li><li>Prova 2: 100 metros livre feminino, 2 séries · 16 atletas, Eliminatórias</li></ul></div>
+        </li>
+        <li class="step" data-step="3">
+          <span class="step__num" aria-hidden="true" data-parallax="-0.05">03</span>
+          <p class="step__label time-highlight">Passo 03</p>
+          <h3>Chegue à prova, à raia e ao tempo.</h3>
+          <p>Fases, séries, pódio e classificação. O tempo de cada atleta, ao centésimo, direto do SGE.</p>
+          <figure class="phone step__shot">
+            <picture><source type="image/avif" srcset="assets/app/ato2-resultados-390.avif 390w, assets/app/ato2-resultados-780.avif 780w" sizes="(min-width: 900px) 360px, 82vw"><source type="image/webp" srcset="assets/app/ato2-resultados-390.webp 390w, assets/app/ato2-resultados-780.webp 780w" sizes="(min-width: 900px) 360px, 82vw"><img class="phone__img" src="assets/app/ato2-resultados-780.webp" width="780" height="1420" alt="Resultados de uma prova no app: pódio, quadro de recordes, fases, séries e classificação com raia e tempo. Dados de demonstração." loading="lazy" decoding="async"></picture>
+          </figure>
+          <div class="sr-only"><table><caption>Resultados de uma prova (dados de demonstração)</caption><thead><tr><th>Colocação</th><th>Raia</th><th>Participante</th><th>Clube</th><th>Tempo</th></tr></thead><tbody><tr><td>1º</td><td>4</td><td>Atleta demonstração 01</td><td>Clube demonstração 01</td><td>1:00.00</td></tr><tr><td>2º</td><td>5</td><td>Atleta demonstração 02</td><td>Clube demonstração 02</td><td>1:01.00</td></tr><tr><td>3º</td><td>3</td><td>Atleta demonstração 03</td><td>Clube demonstração 03</td><td>1:02.00</td></tr><tr><td>4º</td><td>6</td><td>Atleta demonstração 04</td><td>Clube demonstração 01</td><td>1:03.00</td></tr><tr><td>5º</td><td>2</td><td>Atleta demonstração 05</td><td>Clube demonstração 02</td><td>1:04.00</td></tr><tr><td>6º</td><td>7</td><td>Atleta demonstração 06</td><td>Clube demonstração 03</td><td>1:05.00</td></tr><tr><td>7º</td><td>1</td><td>Atleta demonstração 07</td><td>Clube demonstração 01</td><td>1:06.00</td></tr><tr><td>8º</td><td>8</td><td>Atleta demonstração 08</td><td>Clube demonstração 02</td><td>1:07.00</td></tr></tbody></table></div>
+        </li>
+      </ol>
+      <div class="prova__sticky" aria-hidden="true">
+        <div class="phone phone--stack">
+          <div class="stack__item" data-for="1"><picture><source type="image/avif" srcset="assets/app/ato2-calendario-390.avif 390w, assets/app/ato2-calendario-780.avif 780w" sizes="(min-width: 900px) 380px, 82vw"><source type="image/webp" srcset="assets/app/ato2-calendario-390.webp 390w, assets/app/ato2-calendario-780.webp 780w" sizes="(min-width: 900px) 380px, 82vw"><img class="phone__img" src="assets/app/ato2-calendario-780.webp" width="780" height="1420" alt="" loading="lazy" decoding="async"></picture></div>
+          <div class="stack__item" data-for="2"><picture><source type="image/avif" srcset="assets/app/ato2-evento-390.avif 390w, assets/app/ato2-evento-780.avif 780w" sizes="(min-width: 900px) 380px, 82vw"><source type="image/webp" srcset="assets/app/ato2-evento-390.webp 390w, assets/app/ato2-evento-780.webp 780w" sizes="(min-width: 900px) 380px, 82vw"><img class="phone__img" src="assets/app/ato2-evento-780.webp" width="780" height="1420" alt="" loading="lazy" decoding="async"></picture></div>
+          <div class="stack__item" data-for="3"><picture><source type="image/avif" srcset="assets/app/ato2-resultados-390.avif 390w, assets/app/ato2-resultados-780.avif 780w" sizes="(min-width: 900px) 380px, 82vw"><source type="image/webp" srcset="assets/app/ato2-resultados-390.webp 390w, assets/app/ato2-resultados-780.webp 780w" sizes="(min-width: 900px) 380px, 82vw"><img class="phone__img" src="assets/app/ato2-resultados-780.webp" width="780" height="1420" alt="" loading="lazy" decoding="async"></picture></div>
+        </div>
+        <ol class="stack__trail"><li data-for="1">Calendário</li><li data-for="2">Evento</li><li data-for="3">Resultados</li></ol>
+        <p class="cap cap--dark">Telas do app com dados de demonstração.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 4. TEMPO POR DENTRO (versão A, captura real) -->
+<section class="tempo tempo--captura" id="tempo-por-dentro" aria-labelledby="h-tempo">
+  <div class="sbg" aria-hidden="true"><div class="water"><i></i><i></i></div></div>
+  <div class="container tempo__grid">
+    <div class="tempo__copy">
+      <p class="eyebrow">Parciais</p>
+      <h2 id="h-tempo">Cada prova tem uma história. As parciais contam.</h2>
+      <span class="friso" data-reveal aria-hidden="true"></span>
+      <p>Quando as parciais de uma prova são publicadas, o app mostra o ritmo trecho a trecho, em gráfico ou tabela, e compara com o recorde. Os recordes oficiais aplicáveis aparecem junto do resultado.</p>
+      <p class="notice">Nem toda prova tem parciais publicadas.</p>
+      <figure class="strip" data-reveal="strip" aria-label="Como o tempo de uma prova é composto por parciais">
+        <ol class="strip__bar"><li class="seg" style="--w:13"><span class="seg__d">25 m</span><span class="seg__t">13.00</span></li><li class="seg" style="--w:15"><span class="seg__d">50 m</span><span class="seg__t">15.00</span></li><li class="seg" style="--w:16"><span class="seg__d">75 m</span><span class="seg__t">16.00</span></li><li class="seg" style="--w:16"><span class="seg__d">100 m</span><span class="seg__t">16.00</span></li></ol>
+        <figcaption><span>Parciais, quando publicadas: cada trecho da prova.</span><span class="strip__total"><b class="time-highlight">1:00.00</b> tempo final</span></figcaption>
+        <p class="cap cap--dark">Dados de demonstração.</p>
+      </figure>
+      <p class="sim">Nas provas individuais concluídas, o app também reproduz a série raia a raia (&ldquo;Simular esta série&rdquo;).</p>
+    </div>
+    <div class="tempo__pane">
+      <div class="tabs" role="tablist" aria-label="Formato das parciais">
+        <button class="tab is-on" role="tab" id="tab-grafico" aria-selected="true" aria-controls="panel-grafico" type="button">Gráfico</button>
+        <button class="tab" role="tab" id="tab-tabela" aria-selected="false" aria-controls="panel-tabela" type="button" tabindex="-1">Tabela</button>
+      </div>
+      <div class="panel is-on" role="tabpanel" id="panel-grafico" aria-labelledby="tab-grafico">
+        <figure class="phone phone--flat">
+          <picture><source type="image/avif" srcset="assets/app/ato3-parciais-390.avif 390w, assets/app/ato3-parciais-780.avif 780w" sizes="(min-width: 900px) 420px, 88vw"><source type="image/webp" srcset="assets/app/ato3-parciais-390.webp 390w, assets/app/ato3-parciais-780.webp 780w" sizes="(min-width: 900px) 420px, 88vw"><img class="phone__img" src="assets/app/ato3-parciais-780.webp" width="756" height="1950" alt="Análise de parciais no app, em gráfico: parciais a cada 25 metros, melhor parcial, média das parciais, oscilação e ritmo comparado ao recorde mundial. Dados de demonstração." loading="lazy" decoding="async"></picture>
+        </figure>
+      </div>
+      <div class="panel" role="tabpanel" id="panel-tabela" aria-labelledby="tab-tabela" hidden>
+        <figure class="phone phone--flat">
+          <picture><source type="image/avif" srcset="assets/app/ato3-parciais-tabela-390.avif 390w, assets/app/ato3-parciais-tabela-780.avif 780w" sizes="(min-width: 900px) 420px, 88vw"><source type="image/webp" srcset="assets/app/ato3-parciais-tabela-390.webp 390w, assets/app/ato3-parciais-tabela-780.webp 780w" sizes="(min-width: 900px) 420px, 88vw"><img class="phone__img" src="assets/app/ato3-parciais-tabela-780.webp" width="756" height="850" alt="Análise de parciais no app, em tabela: trecho, parcial, acumulado e ritmo de cada 25 metros. Dados de demonstração." loading="lazy" decoding="async"></picture>
+        </figure>
+      </div>
+      <div class="sr-only"><table><caption>Parciais de uma prova (dados de demonstração)</caption><thead><tr><th>Trecho</th><th>Parcial</th><th>Acumulado</th></tr></thead><tbody><tr><td>25 m</td><td>13.00</td><td>13.00</td></tr><tr><td>50 m</td><td>15.00</td><td>28.00</td></tr><tr><td>75 m</td><td>16.00</td><td>44.00</td></tr><tr><td>100 m</td><td>16.00</td><td>1:00.00</td></tr></tbody></table></div>
+    </div>
+  </div>
+</section>
+
+<div class="rope rope--on-canvas" aria-hidden="true"></div>
+
+<!-- 5. ALÉM DO RESULTADO -->
+<section class="depois" id="alem-do-resultado" aria-labelledby="h-depois">
+  <div class="sbg" aria-hidden="true"><div class="water water--ink"><i></i><i></i></div></div>
+  <div class="container">
+    <header class="section-head section-head--ink">
+      <p class="eyebrow eyebrow--ink">Além do resultado</p>
+      <h2 id="h-depois">Tudo o que acompanha a competição.</h2>
+      <span class="friso friso--royal" data-reveal aria-hidden="true"></span>
+    </header>
+    <div class="lanes">
+      <article class="lane lane--wide">
+        <p class="lane__tag">Quadro de medalhas</p>
+        <p class="lane__txt">Quem lidera o quadro de medalhas por clube, e quais clubes e atletas estão inscritos em cada evento.</p>
+        <figure class="phone phone--lane">
+          <picture><source type="image/avif" srcset="assets/app/ato5-medalhas-390.avif 390w, assets/app/ato5-medalhas-780.avif 780w" sizes="(min-width: 900px) 400px, 82vw"><source type="image/webp" srcset="assets/app/ato5-medalhas-390.webp 390w, assets/app/ato5-medalhas-780.webp 780w" sizes="(min-width: 900px) 400px, 82vw"><img class="phone__img" src="assets/app/ato5-medalhas-780.webp" width="780" height="1380" alt="Quadro de medalhas de um evento no app: pódio dos clubes e lista com ouro, prata, bronze e total. Dados de demonstração." loading="lazy" decoding="async"></picture>
+        </figure>
+        <div class="sr-only"><table><caption>Quadro de medalhas (dados de demonstração)</caption><thead><tr><th>Posição</th><th>Clube</th><th>Ouro</th><th>Prata</th><th>Bronze</th><th>Total</th></tr></thead><tbody><tr><td>1</td><td>Clube Demonstração 01</td><td>3</td><td>2</td><td>1</td><td>6</td></tr><tr><td>2</td><td>Clube Demonstração 02</td><td>2</td><td>1</td><td>2</td><td>5</td></tr><tr><td>3</td><td>Clube Demonstração 03</td><td>2</td><td>1</td><td>1</td><td>4</td></tr></tbody></table></div>
+      </article>
+      <article class="lane lane--mid">
+        <p class="lane__tag">Boletins</p>
+        <p class="lane__txt">Os boletins oficiais, com busca por número ou título e filtros de federação e esporte.</p>
+        <figure class="phone phone--lane">
+          <picture><source type="image/avif" srcset="assets/app/ato5-boletins-390.avif 390w, assets/app/ato5-boletins-780.avif 780w" sizes="(min-width: 900px) 330px, 82vw"><source type="image/webp" srcset="assets/app/ato5-boletins-390.webp 390w, assets/app/ato5-boletins-780.webp 780w" sizes="(min-width: 900px) 330px, 82vw"><img class="phone__img" src="assets/app/ato5-boletins-780.webp" width="780" height="760" alt="Lista de boletins no app, com busca por número ou título e filtros de federação e esporte. Dados de demonstração." loading="lazy" decoding="async"></picture>
+        </figure>
+        <div class="sr-only"><ul><li>001/2026: Boletim de demonstração 01, 4 de set de 2026</li><li>002/2026: Boletim de demonstração 02, 3 de set de 2026</li><li>003/2026: Boletim de demonstração 03, 2 de set de 2026</li></ul></div>
+      </article>
+      <article class="lane lane--slim">
+        <p class="lane__tag">Calculadora de pontuação</p>
+        <p class="lane__txt">Quanto vale um tempo? A pontuação pela fórmula da World Aquatics: informe piscina, sexo, prova e o seu tempo.</p>
+        <figure class="phone phone--lane">
+          <picture><source type="image/avif" srcset="assets/app/ato5-calculadora-390.avif 390w, assets/app/ato5-calculadora-780.avif 780w" sizes="(min-width: 900px) 300px, 82vw"><source type="image/webp" srcset="assets/app/ato5-calculadora-390.webp 390w, assets/app/ato5-calculadora-780.webp 780w" sizes="(min-width: 900px) 300px, 82vw"><img class="phone__img" src="assets/app/ato5-calculadora-780.webp" width="780" height="1190" alt="Calculadora de pontuação no app: piscina, sexo, prova e tempo informado, com pontos, tempo base, diferença e faixa de nível. Dados de demonstração." loading="lazy" decoding="async"></picture>
+        </figure>
+        <p class="sr-only">Exemplo de dados de demonstração: piscina 50m (Longa), sexo Masculino, prova 100 m Livre, tempo informado 52.00, 710 pontos, faixa Muito bom.</p>
+      </article>
+    </div>
+    <div class="also"><p class="also__l">Também no app</p><ul class="also__list"><li>Notícias</li><li>Federações</li><li>Favoritos de evento</li><li>Notificações públicas opcionais</li><li>Tema claro ou escuro</li></ul></div>
+  </div>
+</section>
+<div class="rope rope--on-canvas" aria-hidden="true"></div>
+
+<!-- 6. FONTE DOS DADOS -->
+<section class="fonte" id="fonte-dos-dados" aria-labelledby="h-fonte">
+  <div class="sbg" aria-hidden="true"><div class="water"><i></i><i></i></div></div>
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow">Dados oficiais</p>
+      <h2 id="h-fonte">Informação oficial, direto da fonte.</h2>
+      <span class="friso" data-reveal aria-hidden="true"></span>
+      <p class="fonte__lead">O Vida Atleta é integrado ao ecossistema da CBDA e ao SGE. Balizamento, raias, tempos, parciais e resultados seguem do sistema de gestão para os canais oficiais e para o app, com a tecnologia que organiza as competições e sem depender de dados copiados de outro lugar.</p>
+    </header>
+    <figure class="flow" data-reveal="flow">
+      <svg class="flow__svg" viewBox="0 0 960 150" role="img" aria-labelledby="flow-t flow-d">
+        <title id="flow-t">Caminho do dado</title>
+        <desc id="flow-d">A competição alimenta o Sistema de Gestão Esportiva da CBDA, o SGE, que alimenta o aplicativo Vida Atleta.</desc>
+        <g class="flow__nodes">
+          <rect x="2" y="30" width="270" height="90" rx="16"/>
+          <rect x="345" y="30" width="270" height="90" rx="16"/>
+          <rect x="688" y="30" width="270" height="90" rx="16"/>
+        </g>
+        <path class="flow__line" d="M272 75 H345 M615 75 H688" pathLength="100"/>
+        <path class="flow__head" d="M334 65 l12 10 l-12 10 M677 65 l12 10 l-12 10"/>
+        <g class="flow__labels">
+          <text x="137" y="68" text-anchor="middle" class="t1">A competição</text>
+          <text x="137" y="94" text-anchor="middle" class="t2">raias, tempos e resultados</text>
+          <text x="480" y="68" text-anchor="middle" class="t1">SGE</text>
+          <text x="480" y="94" text-anchor="middle" class="t2">Sistema de Gestão Esportiva da CBDA</text>
+          <text x="823" y="68" text-anchor="middle" class="t1">Vida Atleta</text>
+          <text x="823" y="94" text-anchor="middle" class="t2">o aplicativo da CBDA</text>
+        </g>
+      </svg>
+      <ol class="flow__list">
+        <li><b>A competição</b><span>raias, tempos e resultados</span></li>
+        <li><b>SGE</b><span>Sistema de Gestão Esportiva da CBDA</span></li>
+        <li><b>Vida Atleta</b><span>o aplicativo da CBDA</span></li>
+      </ol>
+    </figure>
+    <dl class="evidence">
+      <div class="ev"><dt>Tempo em mm:ss.cc, o formato oficial.</dt><dd><b class="time-highlight">1:00.00</b></dd></div>
+      <div class="ev"><dt>Recordes oficiais aplicáveis aparecem junto do resultado.</dt><dd>Quadro de Recordes · Mundial</dd></div>
+      <div class="ev"><dt>Se o calendário está desatualizado, o app avisa, com a data.</dt><dd>Dados desatualizados · data da última atualização</dd></div>
+      <div class="ev"><dt>Atletas com nome público e clube. Sem CPF, nascimento completo, contato ou foto.</dt><dd>Atleta demonstração 01 · Clube demonstração 01</dd></div>
+    </dl>
+    <p class="cap cap--dark">Exemplos com dados de demonstração.</p>
+  </div>
+</section>
+
+<!-- 7. NOVA ERA DIGITAL -->
+<section class="nova" id="nova-era" aria-labelledby="h-nova">
+  <div class="sbg" aria-hidden="true"><div class="water water--ink"><i></i><i></i></div></div>
+  <div class="container">
+    <header class="section-head section-head--ink">
+      <p class="eyebrow eyebrow--ink">Nova era digital</p>
+      <h2 id="h-nova">O Vida Atleta é a face mais visível de um movimento.</h2>
+      <span class="friso friso--royal" data-reveal aria-hidden="true"></span>
+      <p class="nova__lead">Sob a liderança da atual diretoria, a CBDA está modernizando a tecnologia de todo o esporte aquático, com soluções propostas e desenvolvidas pela BigMídia, responsável pelo SGE.</p>
+    </header>
+    <ol class="raias">
+      <li><span class="raias__n">Raia 1</span><h3>Natação</h3><p>A quarta versão do software de gestão de competições, integrada aos placares eletrônicos e ao telão.</p></li>
+      <li><span class="raias__n">Raia 2</span><h3>Águas abertas</h3><p>O novo MAR, uma aplicação web instalável que opera offline e sincroniza com o SGE quando a rede volta.</p></li>
+      <li><span class="raias__n">Raia 3</span><h3>Polo aquático</h3><p>Novo sistema de inscrições e competições, em testes, dentro do SGE.</p></li>
+      <li><span class="raias__n">Raia 4</span><h3>Estatísticas e inteligência</h3><p>O acervo de competições e resultados organizado para mostrar como o esporte evolui.</p></li>
+      <li><span class="raias__n">Raia 5</span><h3>Sites</h3><p>Um novo site da CBDA e uma nova geração de sites para as federações.</p></li>
+      <li><span class="raias__n">Raia 6</span><h3>Federações</h3><p>Todo esse conjunto de ferramentas é disponibilizado gratuitamente a cada federação estadual.</p></li>
+    </ol>
+    <p class="cap nova__cap">O SGE, da BigMídia, está presente na gestão de 28 confederações e em uma base com mais de 1,5 milhão de atletas cadastrados.</p>
+  </div>
+</section>
+
+<div class="rope rope--on-canvas" aria-hidden="true"></div>
+<!-- 8. FAQ -->
+<section class="faq" id="faq" aria-labelledby="h-faq">
+  <div class="sbg" aria-hidden="true"><div class="water"><i></i><i></i></div></div>
+  <div class="container faq__grid">
+    <header class="faq__head">
+      <p class="eyebrow">Perguntas frequentes</p>
+      <h2 id="h-faq">O que você precisa saber antes de começar.</h2>
+      <span class="friso" data-reveal aria-hidden="true"></span>
+      <p class="fonte__lead">Funcionalidades, tecnologia e o que faz do Vida Atleta o canal oficial da CBDA.</p>
+    </header>
+    <div class="faq__list">
+<details class="qa" open><summary>O que é o Vida Atleta?</summary><div class="qa__a"><p>É o aplicativo da CBDA, integrado ao Sistema de Gestão Esportiva (SGE), para acompanhar calendário, eventos, programas de provas, séries, raias, parciais e resultados oficiais da natação brasileira. Faz parte da nova era digital da CBDA.</p></div></details>
+<details class="qa"><summary>É o canal oficial da CBDA?</summary><div class="qa__a"><p>Sim. O Vida Atleta é o aplicativo da CBDA e a porta de entrada para as informações oficiais do esporte, com dados que vêm direto do SGE, o sistema que organiza as competições.</p></div></details>
+<details class="qa"><summary>Por que usar o Vida Atleta e não outro aplicativo?</summary><div class="qa__a"><p>Porque a informação é oficial e vem direto da fonte. Balizamento, raias, tempos e resultados seguem do SGE para os canais oficiais e para o app, sem depender de copiar dados de outro lugar.</p></div></details>
+<details class="qa"><summary>Quais funcionalidades o app tem?</summary><div class="qa__a"><p>Calendário de eventos, detalhe do evento e programa de provas, resultados com pódio, raia e tempo, parciais em gráfico e tabela, quadro de medalhas, clubes e atletas inscritos, boletins oficiais, notícias, calculadora de pontuação, favoritos de evento e notificações públicas opcionais.</p></div></details>
+<details class="qa"><summary>Todas as provas têm parciais?</summary><div class="qa__a"><p>Não. As parciais aparecem quando são publicadas para a prova. Quando existem, o app mostra o ritmo trecho a trecho, em gráfico ou tabela, e compara com o recorde.</p></div></details>
+<details class="qa"><summary>Que dados dos atletas aparecem?</summary><div class="qa__a"><p>O nome público e o clube. O app não exibe CPF, nascimento completo, contato ou foto do atleta.</p></div></details>
+<details class="qa"><summary>Quando o app estará disponível?</summary><div class="qa__a"><p>O Vida Atleta está em fase de lançamento. As informações sobre disponibilidade serão divulgadas pela CBDA.</p></div></details>
+<details class="qa"><summary>Como será o acesso?</summary><div class="qa__a"><p>Quando o app for liberado, o acesso será por conta Google, Apple (no iPhone) ou e-mail, com um perfil mínimo e o aceite dos termos.</p></div></details>
+<details class="qa"><summary>O que mais a CBDA está fazendo além do app?</summary><div class="qa__a"><p>O Vida Atleta é a face mais visível de um movimento: nova geração do software de gestão de competições de natação, novo MAR para águas abertas, novo sistema de polo aquático em testes, área de estatísticas e inteligência esportiva e novos sites para a CBDA e as federações.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 9. APRESENTAÇÃO / ENTRADA -->
+
+<section class="launch" id="apresentacao" aria-labelledby="h-launch">
+  <div class="sbg" aria-hidden="true"><div class="sbg__photo sbg__photo--launch" data-parallax="0.08"><picture><source type="image/avif" srcset="assets/photo/nadador-aereo-800.avif 800w, assets/photo/nadador-aereo-1600.avif 1600w" sizes="100vw"><source type="image/webp" srcset="assets/photo/nadador-aereo-800.webp 800w, assets/photo/nadador-aereo-1600.webp 1600w" sizes="100vw"><img class="photo" src="assets/photo/nadador-aereo-1600.webp" width="1920" height="1150" alt="" loading="lazy" decoding="async"></picture></div><div class="water"><i></i><i></i></div><div class="sbg__shade sbg__shade--launch"></div></div>
+  <div class="container launch__in">
+
+    <p class="eyebrow">Em fase de lançamento</p>
+    <h2 id="h-launch">O Vida Atleta está chegando.</h2>
+    <p class="launch__lead">O aplicativo da CBDA entra em fase de lançamento. Os links das lojas serão divulgados pelos canais oficiais da CBDA. Acompanhe por lá.</p>
+    <div class="launch__actions">
+      <a class="btn btn--primary btn--lg" href="https://www.cbda.org.br/" target="_blank" rel="noopener noreferrer">Acompanhar a CBDA<svg class="btn__arrow" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <ul class="launch__stores" aria-label="Lojas de aplicativos"><li><span class="store store--soon" aria-disabled="true"><b>Google Play</b><i>Em breve</i></span></li><li><span class="store store--soon" aria-disabled="true"><b>App Store</b><i>Em breve</i></span></li></ul>
+    </div>
+    <ul class="launch__social" aria-label="Redes sociais da CBDA"><li><a href="https://www.instagram.com/cbdaoficial/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg><span>Instagram</span></a></li><li><a href="https://www.youtube.com/c/TVCBDAOFICIAL" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 9.2v5.6l5-2.8z" fill="currentColor"/></svg><span>YouTube</span></a></li><li><a href="https://www.facebook.com/cbdaoficial/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M14 8.5V7c0-.8.3-1.2 1.3-1.2H17V3h-2.6C11.6 3 10.5 4.6 10.5 6.8v1.7H8V11.5h2.5V21H14v-9.5h2.6L17 8.5z" fill="currentColor"/></svg><span>Facebook</span></a></li><li><a href="https://twitter.com/CBDAoficial" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 4l14 16M19 4L5 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>X</span></a></li></ul>
+  </div>
+</section>
+
+
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+
+    <div class="site-footer__top">
+      <div class="site-footer__brand">
+        <a class="lockup lockup--footer" href="#inicio" aria-label="Vida Atleta, início"><img class="lockup__symbol" src="assets/img/symbol.svg" width="28" height="25" alt=""><span class="lockup__text">Vida Atleta</span></a>
+        <p>O canal oficial da CBDA para acompanhar a natação, integrado ao Sistema de Gestão Esportiva (SGE).</p>
+        <p class="pill">Em fase de lançamento</p>
+      </div>
+      <nav class="fcol" aria-label="Organização do site">
+        <h2 class="fcol__t">Neste site</h2>
+        <ul>
+          <li><a href="#a-prova">Como funciona</a></li>
+          <li><a href="#tempo-por-dentro">Parciais</a></li>
+          <li><a href="#fonte-dos-dados">Dados oficiais</a></li>
+          <li><a href="#nova-era">Nova era digital</a></li>
+          <li><a href="#faq">Perguntas frequentes</a></li>
+        </ul>
+      </nav>
+      <div class="fcol">
+        <h2 class="fcol__t">Instalar o app</h2>
+        <ul class="fcol__stores"><li><span class="store store--soon" aria-disabled="true"><b>Google Play</b><i>Em breve</i></span></li><li><span class="store store--soon" aria-disabled="true"><b>App Store</b><i>Em breve</i></span></li></ul>
+        <p class="fcol__note">Os links das lojas serão divulgados pela CBDA no lançamento.</p>
+      </div>
+      <div class="fcol">
+        <h2 class="fcol__t">CBDA</h2>
+        <ul>
+          <li><a href="https://www.cbda.org.br/" target="_blank" rel="noopener noreferrer">Site da CBDA</a></li>
+        </ul>
+        <h3 class="fcol__t fcol__t--sub">Redes sociais da CBDA</h3>
+        <ul class="fcol__social"><li><a href="https://www.instagram.com/cbdaoficial/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg><span>Instagram</span></a></li><li><a href="https://www.facebook.com/cbdaoficial/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M14 8.5V7c0-.8.3-1.2 1.3-1.2H17V3h-2.6C11.6 3 10.5 4.6 10.5 6.8v1.7H8V11.5h2.5V21H14v-9.5h2.6L17 8.5z" fill="currentColor"/></svg><span>Facebook</span></a></li><li><a href="https://www.youtube.com/c/TVCBDAOFICIAL" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 9.2v5.6l5-2.8z" fill="currentColor"/></svg><span>YouTube</span></a></li><li><a href="https://twitter.com/CBDAoficial" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 4l14 16M19 4L5 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>X</span></a></li></ul>
+      </div>
+      <div class="fcol">
+        <h2 class="fcol__t">Tecnologia</h2>
+        <ul>
+          <li><span>BigMídia</span><span class="fcol__sub"> · responsável pelo SGE</span></li>
+        </ul>
+        <h3 class="fcol__t fcol__t--sub">Legal</h3>
+        <ul>
+          <li><span>Termos de uso</span><span class="fcol__sub"> · na tela de acesso do app</span></li>
+          <li><span>Política de privacidade</span><span class="fcol__sub"> · na tela de acesso do app</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p>© 2026 Vida Atleta.</p>
+      <p>Telas do app com dados de demonstração. Fotos: Kindel Media, Juli Ane e Vijay Richhiya, via Pexels.</p>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
