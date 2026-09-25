@@ -62,22 +62,6 @@
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !sheet.hidden) close(); });
   }
 
-  // cronômetro do fluxo: conta até o tempo final quando o cartão entra na tela
-  const clock = document.querySelector('.pipe__clock');
-  if (clock) {
-    const total = Number(clock.dataset.ms);
-    const fmt = (v) => `${Math.floor(v / 60000)}:${((v % 60000) / 1000).toFixed(2).padStart(5, '0')}`;
-    const run = () => {
-      const t0 = performance.now(), dur = 1800;
-      const tick = (t) => { const q = Math.min(1, (t - t0) / dur); clock.textContent = fmt(total * (1 - Math.pow(1 - q, 3))); if (q < 1) requestAnimationFrame(tick); };
-      requestAnimationFrame(tick);
-    };
-    if (!reduce.matches && 'IntersectionObserver' in window) {
-      clock.textContent = fmt(0);
-      const co = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { co.disconnect(); run(); } }), { threshold: 0.6 });
-      co.observe(clock);
-    }
-  }
 })();
 
 // ---- movimento: entradas direcionais, palavras do H1, parallax, tilt e pausa fora da tela

@@ -89,8 +89,8 @@ generators.footer = () => `
           <li><a href="#a-prova">Como funciona</a></li>
           ${cfg.tempoMode === 'captura' ? '<li><a href="#tempo-por-dentro">Parciais</a></li>' : ''}
           <li><a href="#fonte-dos-dados">Dados oficiais</a></li>
-          <li><a href="#nova-era">Nova era digital</a></li>
           <li><a href="#faq">Perguntas frequentes</a></li>
+          <li><a href="#nova-era">Nova era digital</a></li>
         </ul>
       </nav>
       <div class="fcol">
@@ -127,10 +127,10 @@ generators.launch = () => {
   const lis = ['instagram', 'youtube', 'facebook', 'x'].map((k) => social(k, { instagram: 'Instagram', youtube: 'YouTube', facebook: 'Facebook', x: 'X (Twitter)' }[k])).join('');
   return `
     <p class="eyebrow">Em fase de lançamento</p>
-    <h2 id="h-launch">O Vida Atleta está chegando.</h2>
-    <p class="launch__lead">O aplicativo da CBDA entra em fase de lançamento. Os links das lojas serão divulgados pelos canais oficiais da CBDA. Acompanhe por lá.</p>
+    <h2 id="h-launch">${L.androidUrl && L.iosUrl ? 'A nova versão está chegando.' : 'O Vida Atleta está chegando.'}</h2>
+    <p class="launch__lead">${L.androidUrl && L.iosUrl ? 'O Vida Atleta já está nas lojas, e a nova versão chega como atualização do aplicativo, em fase de lançamento. Acompanhe as novidades pelos canais oficiais da CBDA.' : 'O aplicativo da CBDA entra em fase de lançamento. Os links das lojas serão divulgados pelos canais oficiais da CBDA. Acompanhe por lá.'}</p>
     <div class="launch__actions">
-      <a class="btn btn--primary btn--lg" href="${esc(L.cbdaSite || '#')}" target="_blank" rel="noopener noreferrer">Acompanhar pelos canais da CBDA<svg class="btn__arrow" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="btn btn--primary btn--lg" href="${esc(L.cbdaSite || '#')}" target="_blank" rel="noopener noreferrer">Ver o site da CBDA<svg class="btn__arrow" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       <ul class="launch__stores" aria-label="Lojas de aplicativos">${store(L.androidUrl, 'Google Play')}${store(L.iosUrl, 'App Store')}</ul>
     </div>
     <ul class="launch__social" aria-label="Redes sociais da CBDA">${lis}</ul>`;
@@ -148,7 +148,7 @@ generators.flow = () => {
           <div class="pipe__card pipe__timer">
             <span class="pipe__lane">Raia ${r.raia}</span>
             <b class="pipe__clock" data-ms="${ms}">${esc(r.tempo)}</b>
-            <small>Cronometragem oficial</small>
+            <small>Tempo oficial da prova</small>
           </div>
         </li>
         <li class="pipe__st">

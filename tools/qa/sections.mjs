@@ -19,7 +19,7 @@ for (const [tag, vp] of [['d1440', { width: 1440, height: 900 }], ['m390', { wid
   for (const [name, sel, mode] of targets) {
     if (tag === 'm390' && !['01-hero', '03-passo1', '06-tempo', '08-fonte', '09-cta'].includes(name)) continue;
     await p.evaluate(({ sel, mode }) => { const e = document.querySelector(sel); const r = e.getBoundingClientRect(); const y = mode === 'center' ? r.top + scrollY - Math.max(90, (innerHeight - r.height) / 2) : r.top + scrollY - 84; window.scrollTo(0, Math.max(0, y)); }, { sel, mode });
-    await p.waitForTimeout(1600);
+    await p.waitForTimeout(3200);
     await p.screenshot({ path: path.join(out, `${tag}-${name}.png`) });
   }
 }

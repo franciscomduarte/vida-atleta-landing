@@ -28,7 +28,7 @@ for (const key of only) {
   const h = await page.evaluate(() => document.documentElement.scrollHeight);
   for (let y = 0; y < h; y += Math.round(height * 0.6)) { await page.evaluate((v) => window.scrollTo(0, v), y); await page.waitForTimeout(220); }
   await page.evaluate(() => window.scrollTo(0, 0));
-  await page.waitForTimeout(700);
+  await page.waitForTimeout(2500);
   const info = await page.evaluate(() => {
     const doc = document.documentElement;
     const broken = [...document.images].filter((i) => i.complete && i.naturalWidth === 0 && getComputedStyle(i).display !== 'none').map((i) => i.currentSrc || i.src);

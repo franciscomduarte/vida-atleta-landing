@@ -81,7 +81,14 @@ for (const img of (args.images || '').split(',').filter(Boolean)) {
   content.push({ type: 'input_image', image_url: `data:image/${ext};base64,${fs.readFileSync(p).toString('base64')}`, detail: 'high' });
 }
 
-const res = await fetch('https://api.openai.com/v1/responses', {
+// A avaliação (raciocínio alto + imagens) é longa; conexões derrubadas (ECONNRESET) são refeitas.
+const send = async () => {
+  for (let tentativa = 1; ; tentativa++) {
+    try { return await fetch('https://api.openai.com/v1/responses', request); }
+    catch (e) { if (tentativa >= 3) throw e; console.error(`Falha de rede (${e.cause?.code || e.message}); nova tentativa ${tentativa + 1}/3…`); await new Promise((r) => setTimeout(r, 4000)); }
+  }
+};
+const request = {
   method: 'POST',
   headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${key}` },
   body: JSON.stringify({
@@ -90,7 +97,8 @@ const res = await fetch('https://api.openai.com/v1/responses', {
     text: { format: { type: 'json_object' } },
     input: [{ role: 'system', content: [{ type: 'input_text', text: system }] }, { role: 'user', content }],
   }),
-});
+};
+const res = await send();
 const body = await res.json();
 if (!res.ok) { console.error('Erro da API:', JSON.stringify(body.error || body)); process.exitCode = 2; throw new Error("abortado"); }
 
