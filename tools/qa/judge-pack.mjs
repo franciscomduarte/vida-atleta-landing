@@ -24,7 +24,7 @@ await chunks(`${S}/full-390.png`, 390, 2600, 390, 'mobile-390', 5);
 const html = fs.readFileSync('site/index.html', 'utf8');
 const body = html.replace(/<div class="sheet"[\s\S]*?<\/div>\s*<\/div>\s*(?=<main)/, '').replace(/<script[\s\S]*?<\/script>/g, '').replace(/<style[\s\S]*?<\/style>/g, '');
 const lines = [];
-for (const m of body.matchAll(/<(h[1-3]|p|li|dt|dd|a|button|figcaption|title|meta)\b([^>]*)>([\s\S]*?)<\/\1>|<meta[^>]*>|<img[^>]*alt="([^"]*)"[^>]*>/g)) {
+for (const m of body.matchAll(/<(h[1-3]|p|li|dt|dd|a|button|figcaption|title|meta|summary)\b([^>]*)>([\s\S]*?)<\/\1>|<meta[^>]*>|<img[^>]*alt="([^"]*)"[^>]*>/g)) {
   if (m[4]) { lines.push(`[imagem alt] ${m[4]}`); continue; }
   const tag = m[1]; const txt = (m[3] || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
   if (tag && txt) lines.push(tag.startsWith('h') ? `${'#'.repeat(Number(tag[1]))} ${txt}` : `- ${txt}`);

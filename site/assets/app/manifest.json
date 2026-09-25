@@ -1,14 +1,14 @@
 {
   "hero-resultados": {
     "source": "A1b-hero-tabela.png",
-    "sha256": "b81bc65e94d3148f434ede16bc7e81f8a4130762f17ee921b08b3942ebc4f68c",
+    "sha256": "2d1f777aa9fdba8050e2d5bab30cc18983984f555bf82953450f61e718452a4d",
     "width": 780,
     "height": 1520,
     "variants": {
-      "hero-resultados-390.avif": 18052,
-      "hero-resultados-390.webp": 26518,
-      "hero-resultados-780.avif": 31343,
-      "hero-resultados-780.webp": 65178
+      "hero-resultados-390.avif": 17961,
+      "hero-resultados-390.webp": 26664,
+      "hero-resultados-780.avif": 31141,
+      "hero-resultados-780.webp": 65030
     }
   },
   "ato2-calendario": {
@@ -37,38 +37,38 @@
   },
   "ato2-resultados": {
     "source": "A1-resultados-prova.png",
-    "sha256": "9e5211260be17455c9b517ecf30446e8adfec6d8bbdcd60ab19581907504e579",
+    "sha256": "ee4d75a4fac8729a74d03dfeab0d9bef36886ed5722dfda21050b6ddde129738",
     "width": 780,
     "height": 1420,
     "variants": {
-      "ato2-resultados-390.avif": 13794,
-      "ato2-resultados-390.webp": 20904,
-      "ato2-resultados-780.avif": 23012,
-      "ato2-resultados-780.webp": 48690
+      "ato2-resultados-390.avif": 13739,
+      "ato2-resultados-390.webp": 20816,
+      "ato2-resultados-780.avif": 22956,
+      "ato2-resultados-780.webp": 48604
     }
   },
   "ato3-parciais": {
     "source": "A5g-parciais-grafico.png",
-    "sha256": "cea46c1959ed3c1eee55c073fbd4869334707fd42d393aa59451554fd31d19a3",
+    "sha256": "478a41a3bdb0bd285e04f15ff9631ffcfbd75a791c9c8371fee18767a2c500da",
     "width": 756,
     "height": 1950,
     "variants": {
-      "ato3-parciais-390.avif": 17313,
-      "ato3-parciais-390.webp": 26862,
-      "ato3-parciais-780.avif": 35972,
-      "ato3-parciais-780.webp": 61776
+      "ato3-parciais-390.avif": 17251,
+      "ato3-parciais-390.webp": 26668,
+      "ato3-parciais-780.avif": 35766,
+      "ato3-parciais-780.webp": 61414
     }
   },
   "ato3-parciais-tabela": {
     "source": "A5-parciais.png",
-    "sha256": "e0909139b57bc3660fd778eaad6a88419d7dd87a6f0acd451f124a7a75267b57",
+    "sha256": "4bd3bda58b96baf42e06be9c2069510f4bf43677823b5943778a0dacc186b393",
     "width": 756,
     "height": 850,
     "variants": {
-      "ato3-parciais-tabela-390.avif": 9270,
-      "ato3-parciais-tabela-390.webp": 13862,
-      "ato3-parciais-tabela-780.avif": 19297,
-      "ato3-parciais-tabela-780.webp": 31348
+      "ato3-parciais-tabela-390.avif": 9217,
+      "ato3-parciais-tabela-390.webp": 13906,
+      "ato3-parciais-tabela-780.avif": 19247,
+      "ato3-parciais-tabela-780.webp": 31262
     }
   },
   "ato5-medalhas": {
@@ -97,14 +97,14 @@
   },
   "ato5-calculadora": {
     "source": "A8-calculadora.png",
-    "sha256": "5c6fd502d55d7bce42c02bfbe1a69784bbb4740fb0dc838c3c3e5fca83e48ba4",
+    "sha256": "4b29ef47a68a4ff27500e3a147a094d8fbba4743e23660adf97e9c3c41067f37",
     "width": 780,
     "height": 1190,
     "variants": {
-      "ato5-calculadora-390.avif": 9687,
-      "ato5-calculadora-390.webp": 15858,
-      "ato5-calculadora-780.avif": 16721,
-      "ato5-calculadora-780.webp": 35280
+      "ato5-calculadora-390.avif": 9763,
+      "ato5-calculadora-390.webp": 16046,
+      "ato5-calculadora-780.avif": 16849,
+      "ato5-calculadora-780.webp": 35684
     }
   }
 }

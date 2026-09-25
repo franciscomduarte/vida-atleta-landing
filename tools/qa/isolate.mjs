@@ -3,11 +3,11 @@ const require = createRequire(import.meta.url);
 const { chromium } = require('C:/projetos/vida-atleta-natacao-app/node_modules/playwright');
 const variants = {
   baseline: {},
-  'sem-agua': { css: '.water{display:none!important}' },
-  'sem-fotos': { css: '.sbg__photo{display:none!important}' },
-  'sem-animacoes-css': { css: '*{animation:none!important}' },
-  'sem-js-main': { block: 'main.js' },
-  'sem-sbg': { css: '.sbg{display:none!important}' },
+
+
+
+  'sem-foto-prova': { css: '.sbg__photo--prova{display:none!important}' },
+
 };
 const b = await chromium.launch();
 for (const [name, v] of Object.entries(variants)) {

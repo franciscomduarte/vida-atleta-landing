@@ -49,7 +49,7 @@
       <a href="#faq">FAQ</a>
     </nav>
 <!--#if cta=presentation-->
-    <a class="btn btn--primary btn--sm site-header__cta" href="#a-prova">Ver como funciona</a>
+    <a class="btn btn--primary btn--sm site-header__cta" href="#apresentacao">Acompanhar o lançamento</a>
 <!--#endif-->
 <!--#if cta=stores-->
     <a class="btn btn--primary btn--sm site-header__cta" href="#apresentacao">Baixar</a>
@@ -75,7 +75,7 @@
       <a href="#faq">FAQ</a>
     </nav>
 <!--#if cta=presentation-->
-    <a class="btn btn--primary btn--block" href="#a-prova">Ver como funciona</a>
+    <a class="btn btn--primary btn--block" href="#apresentacao">Acompanhar o lançamento</a>
 <!--#endif-->
 <!--#if cta=stores-->
     <a class="btn btn--primary btn--block" href="#apresentacao">Baixar</a>
@@ -110,7 +110,7 @@
         <a class="btn btn--primary" href="{{cfg:webUrl}}" target="_blank" rel="noopener">Abrir o Vida Atleta</a>
 <!--#endif-->
         <span class="pill">Em fase de lançamento</span>
-        <a class="link-quiet" href="#fonte-dos-dados">Dados oficiais</a>
+        <a class="link-quiet" href="#apresentacao">Acompanhar o lançamento</a>
       </div>
       <p class="tasks">Para atletas, famílias, treinadores, clubes, federações e torcedores.</p>
       <ol class="trail" aria-label="Caminho no app">
@@ -217,17 +217,16 @@
 <!--#if tempo=captura-->
 <!-- 4. TEMPO POR DENTRO (versão A, captura real) -->
 <section class="tempo tempo--captura" id="tempo-por-dentro" aria-labelledby="h-tempo">
-  <div class="sbg" aria-hidden="true"><div class="water"><i></i><i></i></div></div>
-  <div class="container tempo__grid">
+    <div class="container tempo__grid">
     <div class="tempo__copy">
       <p class="eyebrow">Parciais</p>
-      <h2 id="h-tempo">Cada prova tem uma história. As parciais contam.</h2>
+      <h2 id="h-tempo">Veja o ritmo da prova, trecho a trecho.</h2>
       <span class="friso" data-reveal aria-hidden="true"></span>
-      <p>Quando as parciais de uma prova são publicadas, o app mostra o ritmo trecho a trecho, em gráfico ou tabela, e compara com o recorde. Os recordes oficiais aplicáveis aparecem junto do resultado.</p>
+      <p>Quando as parciais oficiais de uma prova são publicadas, o app mostra o tempo de cada trecho, em gráfico ou tabela, e compara o ritmo com o recorde. Os recordes oficiais aplicáveis aparecem junto do resultado.</p>
       <p class="notice">Nem toda prova tem parciais publicadas.</p>
       <figure class="strip" data-reveal="strip" aria-label="Como o tempo de uma prova é composto por parciais">
         <ol class="strip__bar">{{gen:strip}}</ol>
-        <figcaption><span>Parciais, quando publicadas: cada trecho da prova.</span><span class="strip__total"><b class="time-highlight">1:00.00</b> tempo final</span></figcaption>
+        <figcaption><span>Parciais, quando publicadas: cada trecho da prova.</span><span class="strip__total"><b class="time-highlight">1:00.37</b> tempo final</span></figcaption>
         <p class="cap cap--dark">Dados de demonstração.</p>
       </figure>
       <p class="sim">Nas provas individuais concluídas, o app também reproduz a série raia a raia (&ldquo;Simular esta série&rdquo;).</p>
@@ -258,7 +257,7 @@
   <div class="sbg" aria-hidden="true"><div class="water water--ink"><i></i><i></i></div></div>
   <div class="container">
     <p class="eyebrow eyebrow--ink">Parciais</p>
-    <h2 id="h-tempo">Cada prova tem uma história. As parciais contam.</h2>
+    <h2 id="h-tempo">Veja o ritmo da prova, trecho a trecho.</h2>
     <span class="friso friso--royal" data-reveal aria-hidden="true"></span>
     <p>Quando as parciais oficiais de uma prova são publicadas, o app as mostra em gráfico de ritmo e em tabela. Nem toda prova tem parciais publicadas.</p>
     <p class="cap cap--legend">Ilustração do funcionamento das parciais. Não é uma captura do app. Não é cronometragem ao vivo.</p>
@@ -318,47 +317,33 @@
 
 <!-- 6. FONTE DOS DADOS -->
 <section class="fonte" id="fonte-dos-dados" aria-labelledby="h-fonte">
-  <div class="sbg" aria-hidden="true"><div class="water"><i></i><i></i></div></div>
-  <div class="container">
+    <div class="container">
     <header class="section-head">
       <p class="eyebrow">Dados oficiais</p>
       <h2 id="h-fonte">Informação oficial, direto da fonte.</h2>
       <span class="friso" data-reveal aria-hidden="true"></span>
-      <p class="fonte__lead">O Vida Atleta é integrado ao ecossistema da CBDA e ao SGE. Balizamento, raias, tempos, parciais e resultados seguem do sistema de gestão para os canais oficiais e para o app, com a tecnologia que organiza as competições e sem depender de dados copiados de outro lugar.</p>
+      <p class="fonte__lead">O Vida Atleta é integrado ao ecossistema da CBDA e ao SGE. Programa de provas, séries, raias, tempos, parciais e resultados seguem do sistema de gestão para os canais oficiais e para o app, com a tecnologia que organiza as competições.</p>
     </header>
-    <figure class="flow" data-reveal="flow">
-      <svg class="flow__svg" viewBox="0 0 960 150" role="img" aria-labelledby="flow-t flow-d">
-        <title id="flow-t">Caminho do dado</title>
-        <desc id="flow-d">A competição alimenta o Sistema de Gestão Esportiva da CBDA, o SGE, que alimenta o aplicativo Vida Atleta.</desc>
-        <g class="flow__nodes">
-          <rect x="2" y="30" width="270" height="90" rx="16"/>
-          <rect x="345" y="30" width="270" height="90" rx="16"/>
-          <rect x="688" y="30" width="270" height="90" rx="16"/>
-        </g>
-        <path class="flow__line" d="M272 75 H345 M615 75 H688" pathLength="100"/>
-        <path class="flow__head" d="M334 65 l12 10 l-12 10 M677 65 l12 10 l-12 10"/>
-        <g class="flow__labels">
-          <text x="137" y="68" text-anchor="middle" class="t1">A competição</text>
-          <text x="137" y="94" text-anchor="middle" class="t2">raias, tempos e resultados</text>
-          <text x="480" y="68" text-anchor="middle" class="t1">SGE</text>
-          <text x="480" y="94" text-anchor="middle" class="t2">Sistema de Gestão Esportiva da CBDA</text>
-          <text x="823" y="68" text-anchor="middle" class="t1">Vida Atleta</text>
-          <text x="823" y="94" text-anchor="middle" class="t2">o aplicativo da CBDA</text>
-        </g>
-      </svg>
-      <ol class="flow__list">
-        <li><b>A competição</b><span>raias, tempos e resultados</span></li>
-        <li><b>SGE</b><span>Sistema de Gestão Esportiva da CBDA</span></li>
-        <li><b>Vida Atleta</b><span>o aplicativo da CBDA</span></li>
-      </ol>
-    </figure>
+    {{gen:flow}}
     <dl class="evidence">
-      <div class="ev"><dt>Tempo em mm:ss.cc, o formato oficial.</dt><dd><b class="time-highlight">1:00.00</b></dd></div>
+      <div class="ev"><dt>Tempo em mm:ss.cc, o formato oficial.</dt><dd><b class="time-highlight">1:00.37</b></dd></div>
       <div class="ev"><dt>Recordes oficiais aplicáveis aparecem junto do resultado.</dt><dd>Quadro de Recordes · Mundial</dd></div>
       <div class="ev"><dt>Se o calendário está desatualizado, o app avisa, com a data.</dt><dd>Dados desatualizados · data da última atualização</dd></div>
       <div class="ev"><dt>Atletas com nome público e clube. Sem CPF, nascimento completo, contato ou foto.</dt><dd>Atleta demonstração 01 · Clube demonstração 01</dd></div>
     </dl>
     <p class="cap cap--dark">Exemplos com dados de demonstração.</p>
+  </div>
+</section>
+
+<!-- 6b. PARA QUEM É -->
+<section class="quem" id="para-quem" aria-labelledby="h-quem">
+  <div class="container">
+    <h2 id="h-quem">Para quem é o Vida Atleta</h2>
+    <ul class="quem__list">
+      <li><h3>Atletas e famílias</h3><p>Acompanhe a prova, a raia e o tempo oficial do evento.</p></li>
+      <li><h3>Treinadores e clubes</h3><p>Consulte programa de provas, séries, raias e o quadro de medalhas por clube.</p></li>
+      <li><h3>Federações e torcedores</h3><p>Siga eventos, boletins e notícias oficiais da natação.</p></li>
+    </ul>
   </div>
 </section>
 
@@ -368,27 +353,27 @@
   <div class="container">
     <header class="section-head section-head--ink">
       <p class="eyebrow eyebrow--ink">Nova era digital</p>
-      <h2 id="h-nova">O Vida Atleta é a face mais visível de um movimento.</h2>
+      <h2 id="h-nova">Além do app, a CBDA está modernizando o esporte aquático.</h2>
       <span class="friso friso--royal" data-reveal aria-hidden="true"></span>
-      <p class="nova__lead">Sob a liderança da atual diretoria, a CBDA está modernizando a tecnologia de todo o esporte aquático, com soluções propostas e desenvolvidas pela BigMídia, responsável pelo SGE.</p>
+      <p class="nova__lead">A CBDA está modernizando a tecnologia de todo o esporte aquático, com soluções da BigMídia, responsável pelo SGE.</p>
     </header>
+    <details class="nova__more"><summary>Conheça as seis frentes</summary>
     <ol class="raias">
-      <li><span class="raias__n">Raia 1</span><h3>Natação</h3><p>A quarta versão do software de gestão de competições, integrada aos placares eletrônicos e ao telão.</p></li>
-      <li><span class="raias__n">Raia 2</span><h3>Águas abertas</h3><p>O novo MAR, uma aplicação web instalável que opera offline e sincroniza com o SGE quando a rede volta.</p></li>
-      <li><span class="raias__n">Raia 3</span><h3>Polo aquático</h3><p>Novo sistema de inscrições e competições, em testes, dentro do SGE.</p></li>
-      <li><span class="raias__n">Raia 4</span><h3>Estatísticas e inteligência</h3><p>O acervo de competições e resultados organizado para mostrar como o esporte evolui.</p></li>
-      <li><span class="raias__n">Raia 5</span><h3>Sites</h3><p>Um novo site da CBDA e uma nova geração de sites para as federações.</p></li>
-      <li><span class="raias__n">Raia 6</span><h3>Federações</h3><p>Todo esse conjunto de ferramentas é disponibilizado gratuitamente a cada federação estadual.</p></li>
+      <li><span class="raias__n">Raia 1</span><h3>Natação</h3><p>Nova versão do software de gestão de competições, integrada aos placares e ao telão.</p></li>
+      <li><span class="raias__n">Raia 2</span><h3>Águas abertas</h3><p>O novo MAR: aplicação web instalável, que opera offline e sincroniza com o SGE.</p></li>
+      <li><span class="raias__n">Raia 3</span><h3>Polo aquático</h3><p>Novo sistema de inscrições e competições, em testes no SGE.</p></li>
+      <li><span class="raias__n">Raia 4</span><h3>Estatísticas</h3><p>O acervo de competições e resultados organizado para mostrar a evolução do esporte.</p></li>
+      <li><span class="raias__n">Raia 5</span><h3>Sites</h3><p>Novo site da CBDA e nova geração de sites para as federações.</p></li>
+      <li><span class="raias__n">Raia 6</span><h3>Federações</h3><p>Todas as ferramentas, gratuitas para cada federação estadual.</p></li>
     </ol>
-    <p class="cap nova__cap">O SGE, da BigMídia, está presente na gestão de 28 confederações e em uma base com mais de 1,5 milhão de atletas cadastrados.</p>
+    </details>
   </div>
 </section>
 
 <div class="rope rope--on-canvas" aria-hidden="true"></div>
 <!-- 8. FAQ -->
 <section class="faq" id="faq" aria-labelledby="h-faq">
-  <div class="sbg" aria-hidden="true"><div class="water"><i></i><i></i></div></div>
-  <div class="container faq__grid">
+    <div class="container faq__grid">
     <header class="faq__head">
       <p class="eyebrow">Perguntas frequentes</p>
       <h2 id="h-faq">O que você precisa saber antes de começar.</h2>

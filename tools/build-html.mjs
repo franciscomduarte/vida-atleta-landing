@@ -41,7 +41,7 @@ function photo(name, cls = '', mode = 'lazy') {
   const set = (fmt) => p.widths.map((w) => `assets/photo/${name}-${w}.${fmt} ${w}w`).join(', ');
   const big = p.widths[p.widths.length - 1];
   const load = mode === 'eager' ? ' fetchpriority="high"' : ' loading="lazy"';
-  return `<picture><source type="image/avif" srcset="${set('avif')}" sizes="100vw"><source type="image/webp" srcset="${set('webp')}" sizes="100vw"><img class="${cls}" src="assets/photo/${name}-${big}.webp" width="${p.width}" height="${p.height}" alt=""${load} decoding="async"></picture>`;
+  return `<picture><source type="image/avif" srcset="${set('avif')}" sizes="(max-width:767px) 60vw, 100vw"><source type="image/webp" srcset="${set('webp')}" sizes="(max-width:767px) 60vw, 100vw"><img class="${cls}" src="assets/photo/${name}-${big}.webp" width="${p.width}" height="${p.height}" alt=""${load} decoding="async"></picture>`;
 }
 // ---- <picture>
 function pic(name, alt, sizes = '100vw', cls = '', loading = 'lazy') {
@@ -104,7 +104,7 @@ generators.footer = () => `
           <li><a href="${esc(L.cbdaSite || '#')}" target="_blank" rel="noopener noreferrer">Site da CBDA</a></li>
         </ul>
         <h3 class="fcol__t fcol__t--sub">Redes sociais da CBDA</h3>
-        <ul class="fcol__social">${social('instagram', 'Instagram')}${social('facebook', 'Facebook')}${social('youtube', 'YouTube')}${social('x', 'X')}</ul>
+        <ul class="fcol__social">${social('instagram', 'Instagram')}${social('facebook', 'Facebook')}${social('youtube', 'YouTube')}${social('x', 'X (Twitter)')}</ul>
       </div>
       <div class="fcol">
         <h2 class="fcol__t">Tecnologia</h2>
@@ -124,16 +124,50 @@ generators.footer = () => `
     </div>`;
 
 generators.launch = () => {
-  const lis = ['instagram', 'youtube', 'facebook', 'x'].map((k) => social(k, { instagram: 'Instagram', youtube: 'YouTube', facebook: 'Facebook', x: 'X' }[k])).join('');
+  const lis = ['instagram', 'youtube', 'facebook', 'x'].map((k) => social(k, { instagram: 'Instagram', youtube: 'YouTube', facebook: 'Facebook', x: 'X (Twitter)' }[k])).join('');
   return `
     <p class="eyebrow">Em fase de lançamento</p>
     <h2 id="h-launch">O Vida Atleta está chegando.</h2>
     <p class="launch__lead">O aplicativo da CBDA entra em fase de lançamento. Os links das lojas serão divulgados pelos canais oficiais da CBDA. Acompanhe por lá.</p>
     <div class="launch__actions">
-      <a class="btn btn--primary btn--lg" href="${esc(L.cbdaSite || '#')}" target="_blank" rel="noopener noreferrer">Acompanhar a CBDA<svg class="btn__arrow" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="btn btn--primary btn--lg" href="${esc(L.cbdaSite || '#')}" target="_blank" rel="noopener noreferrer">Acompanhar pelos canais da CBDA<svg class="btn__arrow" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       <ul class="launch__stores" aria-label="Lojas de aplicativos">${store(L.androidUrl, 'Google Play')}${store(L.iosUrl, 'App Store')}</ul>
     </div>
     <ul class="launch__social" aria-label="Redes sociais da CBDA">${lis}</ul>`;
+};
+
+generators.flow = () => {
+  const r = demo.resultados[0];
+  const ms = (() => { const [m, sc] = r.tempo.split(':'); return Math.round((Number(m) * 60 + Number(sc)) * 1000); })();
+  return `
+    <figure class="pipe" data-reveal="flow" aria-labelledby="pipe-t">
+      <figcaption id="pipe-t" class="sr-only">Caminho do dado: a competição alimenta o Sistema de Gestão Esportiva da CBDA, o SGE, que alimenta o aplicativo Vida Atleta. Exemplo com dados de demonstração.</figcaption>
+      <ol class="pipe__row">
+        <li class="pipe__st">
+          <span class="pipe__k">1 · A competição</span>
+          <div class="pipe__card pipe__timer">
+            <span class="pipe__lane">Raia ${r.raia}</span>
+            <b class="pipe__clock" data-ms="${ms}">${esc(r.tempo)}</b>
+            <small>Cronometragem oficial</small>
+          </div>
+        </li>
+        <li class="pipe__st">
+          <span class="pipe__k">2 · SGE</span>
+          <div class="pipe__card pipe__sge">
+            <strong>Sistema de Gestão Esportiva da CBDA</strong>
+            <ul class="pipe__chips"><li>Programa de provas</li><li>Raias</li><li>Tempos</li><li>Parciais</li><li>Resultados</li></ul>
+          </div>
+        </li>
+        <li class="pipe__st">
+          <span class="pipe__k">3 · Vida Atleta</span>
+          <div class="pipe__card pipe__app">
+            <span class="pipe__pos">${r.pos}º</span>
+            <span class="pipe__who"><b>${esc(r.atleta)}</b><i>${esc(r.clube)} · Raia ${r.raia}</i></span>
+            <b class="pipe__time">${esc(r.tempo)}</b>
+          </div>
+        </li>
+      </ol>
+    </figure>`;
 };
 let html = read('site/src/index.template.html');
 

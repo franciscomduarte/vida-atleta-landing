@@ -2,38 +2,165 @@
   "_nota": "Fonte única dos dados de demonstração. Vem das fixtures do app Flutter (test/capture/landing_capture_test.dart + fake_*). Nenhum valor fora deste arquivo entra na landing.",
   "fixtureCommit": "60ded1a (repositório do app) + test/capture/landing_capture_test.dart",
   "resultados": [
-    { "pos": 1, "raia": 4, "atleta": "Atleta demonstração 01", "clube": "Clube demonstração 01", "tempo": "1:00.00" },
-    { "pos": 2, "raia": 5, "atleta": "Atleta demonstração 02", "clube": "Clube demonstração 02", "tempo": "1:01.00" },
-    { "pos": 3, "raia": 3, "atleta": "Atleta demonstração 03", "clube": "Clube demonstração 03", "tempo": "1:02.00" },
-    { "pos": 4, "raia": 6, "atleta": "Atleta demonstração 04", "clube": "Clube demonstração 01", "tempo": "1:03.00" },
-    { "pos": 5, "raia": 2, "atleta": "Atleta demonstração 05", "clube": "Clube demonstração 02", "tempo": "1:04.00" },
-    { "pos": 6, "raia": 7, "atleta": "Atleta demonstração 06", "clube": "Clube demonstração 03", "tempo": "1:05.00" },
-    { "pos": 7, "raia": 1, "atleta": "Atleta demonstração 07", "clube": "Clube demonstração 01", "tempo": "1:06.00" },
-    { "pos": 8, "raia": 8, "atleta": "Atleta demonstração 08", "clube": "Clube demonstração 02", "tempo": "1:07.00" }
+    {
+      "pos": 1,
+      "raia": 4,
+      "atleta": "Atleta demonstração 01",
+      "clube": "Clube demonstração 01",
+      "tempo": "1:00.37"
+    },
+    {
+      "pos": 2,
+      "raia": 5,
+      "atleta": "Atleta demonstração 02",
+      "clube": "Clube demonstração 02",
+      "tempo": "1:00.94"
+    },
+    {
+      "pos": 3,
+      "raia": 3,
+      "atleta": "Atleta demonstração 03",
+      "clube": "Clube demonstração 03",
+      "tempo": "1:01.28"
+    },
+    {
+      "pos": 4,
+      "raia": 6,
+      "atleta": "Atleta demonstração 04",
+      "clube": "Clube demonstração 01",
+      "tempo": "1:01.75"
+    },
+    {
+      "pos": 5,
+      "raia": 2,
+      "atleta": "Atleta demonstração 05",
+      "clube": "Clube demonstração 02",
+      "tempo": "1:02.11"
+    },
+    {
+      "pos": 6,
+      "raia": 7,
+      "atleta": "Atleta demonstração 06",
+      "clube": "Clube demonstração 03",
+      "tempo": "1:02.63"
+    },
+    {
+      "pos": 7,
+      "raia": 1,
+      "atleta": "Atleta demonstração 07",
+      "clube": "Clube demonstração 01",
+      "tempo": "1:03.09"
+    },
+    {
+      "pos": 8,
+      "raia": 8,
+      "atleta": "Atleta demonstração 08",
+      "clube": "Clube demonstração 02",
+      "tempo": "1:03.58"
+    }
   ],
   "parciais": [
-    { "trecho": "25 m", "parcial": "13.00", "acumulado": "13.00", "segundos": 13 },
-    { "trecho": "50 m", "parcial": "15.00", "acumulado": "28.00", "segundos": 15 },
-    { "trecho": "75 m", "parcial": "16.00", "acumulado": "44.00", "segundos": 16 },
-    { "trecho": "100 m", "parcial": "16.00", "acumulado": "1:00.00", "segundos": 16 }
+    {
+      "trecho": "25 m",
+      "parcial": "13.58",
+      "acumulado": "13.58",
+      "segundos": 13.58
+    },
+    {
+      "trecho": "50 m",
+      "parcial": "14.83",
+      "acumulado": "28.41",
+      "segundos": 14.83
+    },
+    {
+      "trecho": "75 m",
+      "parcial": "15.91",
+      "acumulado": "44.32",
+      "segundos": 15.91
+    },
+    {
+      "trecho": "100 m",
+      "parcial": "16.05",
+      "acumulado": "1:00.37",
+      "segundos": 16.05
+    }
   ],
   "eventos": [
-    { "nome": "Festival Aquático de Demonstração", "periodo": "1 a 2 de Setembro, 2026", "situacao": "Acontecendo agora", "local": "Centro Aquático de Teste · Brasília, DF" }
+    {
+      "nome": "Festival Aquático de Demonstração",
+      "periodo": "1 a 2 de Setembro, 2026",
+      "situacao": "Acontecendo agora",
+      "local": "Centro Aquático de Teste · Brasília, DF"
+    }
   ],
   "programa": [
-    { "n": 1, "prova": "50 metros peito masculino", "info": "1 série · 8 atletas", "situacao": "Concluída" },
-    { "n": 2, "prova": "100 metros livre feminino", "info": "2 séries · 16 atletas", "situacao": "Eliminatórias" }
+    {
+      "n": 1,
+      "prova": "50 metros peito masculino",
+      "info": "1 série · 8 atletas",
+      "situacao": "Concluída"
+    },
+    {
+      "n": 2,
+      "prova": "100 metros livre feminino",
+      "info": "2 séries · 16 atletas",
+      "situacao": "Eliminatórias"
+    }
   ],
   "medalhas": [
-    { "pos": 1, "clube": "Clube Demonstração 01", "ouro": 3, "prata": 2, "bronze": 1, "total": 6 },
-    { "pos": 2, "clube": "Clube Demonstração 02", "ouro": 2, "prata": 1, "bronze": 2, "total": 5 },
-    { "pos": 3, "clube": "Clube Demonstração 03", "ouro": 2, "prata": 1, "bronze": 1, "total": 4 }
+    {
+      "pos": 1,
+      "clube": "Clube Demonstração 01",
+      "ouro": 3,
+      "prata": 2,
+      "bronze": 1,
+      "total": 6
+    },
+    {
+      "pos": 2,
+      "clube": "Clube Demonstração 02",
+      "ouro": 2,
+      "prata": 1,
+      "bronze": 2,
+      "total": 5
+    },
+    {
+      "pos": 3,
+      "clube": "Clube Demonstração 03",
+      "ouro": 2,
+      "prata": 1,
+      "bronze": 1,
+      "total": 4
+    }
   ],
   "boletins": [
-    { "numero": "001/2026", "titulo": "Boletim de demonstração 01", "data": "4 de set de 2026" },
-    { "numero": "002/2026", "titulo": "Boletim de demonstração 02", "data": "3 de set de 2026" },
-    { "numero": "003/2026", "titulo": "Boletim de demonstração 03", "data": "2 de set de 2026" }
+    {
+      "numero": "001/2026",
+      "titulo": "Boletim de demonstração 01",
+      "data": "4 de set de 2026"
+    },
+    {
+      "numero": "002/2026",
+      "titulo": "Boletim de demonstração 02",
+      "data": "3 de set de 2026"
+    },
+    {
+      "numero": "003/2026",
+      "titulo": "Boletim de demonstração 03",
+      "data": "2 de set de 2026"
+    }
   ],
-  "calculadora": { "piscina": "50m (Longa)", "sexo": "Masculino", "prova": "100 m Livre", "tempoInformado": "52.00", "tempoBase": "46.40s", "pontos": "710", "faixa": "Muito bom" },
-  "recorde": { "rotulo": "Mundial", "tempo": "52.41" }
+  "calculadora": {
+    "piscina": "50m (Longa)",
+    "sexo": "Masculino",
+    "prova": "100 m Livre",
+    "tempoInformado": "52.38",
+    "tempoBase": "46.40s",
+    "pontos": "695",
+    "faixa": "Intermediário"
+  },
+  "recorde": {
+    "rotulo": "Mundial",
+    "tempo": "52.41"
+  }
 }
