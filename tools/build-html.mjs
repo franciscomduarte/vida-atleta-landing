@@ -79,9 +79,9 @@ const store = (url, name) => url ? `<li><a class="store" href="${esc(url)}" targ
 generators.footer = () => `
     <div class="site-footer__top">
       <div class="site-footer__brand">
-        <a class="lockup lockup--footer" href="#inicio" aria-label="Vida Atleta, início"><img class="lockup__symbol" src="assets/img/symbol.svg" width="28" height="25" alt=""><span class="lockup__text">Vida Atleta</span></a>
+        <a class="lockup lockup--footer" href="#inicio" aria-label="Vida Atleta, início"><img class="lockup__symbol" src="assets/img/symbol.svg" width="28" height="25" alt=""><span class="lockup__text">Vida Atleta</span><span class="lockup__org"><img src="assets/img/cbda-shield.svg" width="22" height="28" alt=""><img src="assets/img/cbda-wordmark.svg" width="56" height="14" alt=""></span></a>
         <p>O canal oficial da CBDA para acompanhar a natação, integrado ao Sistema de Gestão Esportiva (SGE).</p>
-        <p class="pill">Em fase de lançamento</p>
+        <p class="pill">Disponível nas lojas</p>
       </div>
       <nav class="fcol" aria-label="Organização do site">
         <h2 class="fcol__t">Neste site</h2>
@@ -126,9 +126,9 @@ generators.footer = () => `
 generators.launch = () => {
   const lis = ['instagram', 'youtube', 'facebook', 'x'].map((k) => social(k, { instagram: 'Instagram', youtube: 'YouTube', facebook: 'Facebook', x: 'X (Twitter)' }[k])).join('');
   return `
-    <p class="eyebrow">Em fase de lançamento</p>
-    <h2 id="h-launch">${L.androidUrl && L.iosUrl ? 'A nova versão está chegando.' : 'O Vida Atleta está chegando.'}</h2>
-    <p class="launch__lead">${L.androidUrl && L.iosUrl ? 'O Vida Atleta já está nas lojas, e a nova versão chega como atualização do aplicativo, em fase de lançamento. Acompanhe as novidades pelos canais oficiais da CBDA.' : 'O aplicativo da CBDA entra em fase de lançamento. Os links das lojas serão divulgados pelos canais oficiais da CBDA. Acompanhe por lá.'}</p>
+    <p class="eyebrow">Disponível agora</p>
+    <h2 id="h-launch">${L.androidUrl && L.iosUrl ? 'Baixe o Vida Atleta.' : 'O Vida Atleta está chegando.'}</h2>
+    <p class="launch__lead">${L.androidUrl && L.iosUrl ? 'O aplicativo oficial da CBDA está no Google Play e na App Store. Instale, ou atualize se você já tem o app, e acompanhe calendário, provas, raias e resultados no celular.' : 'O aplicativo da CBDA entra em fase de lançamento. Os links das lojas serão divulgados pelos canais oficiais da CBDA. Acompanhe por lá.'}</p>
     <div class="launch__actions">
       <ul class="launch__stores" aria-label="Lojas de aplicativos">${store(L.androidUrl, 'Google Play')}${store(L.iosUrl, 'App Store')}</ul>
       <a class="btn btn--ghost btn--lg" href="${esc(L.cbdaSite || '#')}" target="_blank" rel="noopener noreferrer">Ver o site da CBDA<svg class="btn__arrow" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>

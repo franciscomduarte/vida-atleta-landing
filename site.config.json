@@ -3,7 +3,7 @@
   "tempoMode": "captura",
   "internalPreview": true,
   "h1Variant": "editorial",
-  "cbdaLockup": false,
+  "cbdaLockup": true,
   "motionQaPassed": true,
   "motionPlus": false,
   "siteUrl": "",
