@@ -106,3 +106,5 @@ Evento, Temporada, Acontecendo agora, Próximos eventos, Calendário, Prova, Fas
 - hero-agua (Juli Ane, Pexels 31049378, sem pessoas), aerea-raias (Vijay Richhiya, Pexels 36018788, figuras minúsculas não identificáveis; recorte exclui lonas com marca), nadador-aereo (Kindel Media, Pexels 8688609, adulto em vista aérea, sem rosto identificável na escala usada). Usadas como fundo sob sobreposição azul. Autorizadas pelo responsável em 2026-09-25. Sem comprovação de idade dos figurantes (por isso só recortes sem rosto identificável). Créditos no rodapé.
 
 - Uso do escudo e do lockup da CBDA APROVADO pelo responsável do projeto em 2026-09-26 (arquivos do app: assets/brand/cbda-shield.svg e cbda.svg). A landing os usa no cabeçalho e no rodapé.
+
+- Termos de uso e Política de privacidade: páginas públicas PROVISÓRIAS criadas em 2026-09-26 (termos-de-uso.html e politica-de-privacidade.html), marcadas "Em construção", a pedido do responsável; o conteúdo jurídico final será publicado pela CBDA. Enquanto isso, o aceite dos termos e as informações de privacidade seguem na tela de acesso do app. As páginas usam noindex.

@@ -16,7 +16,8 @@
     "bigmidiaSite": "https://bigmidia.com/",
     "androidUrl": "https://play.google.com/store/apps/details?id=com.bigmidia.vidaatleta.cbda&hl=pt_BR",
     "iosUrl": "https://apps.apple.com/br/app/vida-atleta/id1483091888",
-    "termsUrl": "",
-    "privacyUrl": ""
-  }
+    "termsUrl": "termos-de-uso.html",
+    "privacyUrl": "politica-de-privacidade.html"
+  },
+  "legalEmConstrucao": true
 }

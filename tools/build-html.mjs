@@ -113,8 +113,8 @@ generators.footer = () => `
         </ul>
         <h3 class="fcol__t fcol__t--sub">Legal</h3>
         <ul>
-          <li>${L.termsUrl ? `<a href="${esc(L.termsUrl)}">Termos de uso</a>` : '<span>Termos de uso</span><span class="fcol__sub"> · na tela de acesso do app</span>'}</li>
-          <li>${L.privacyUrl ? `<a href="${esc(L.privacyUrl)}">Política de privacidade</a>` : '<span>Política de privacidade</span><span class="fcol__sub"> · na tela de acesso do app</span>'}</li>
+          <li>${L.termsUrl ? `<a href="${esc(L.termsUrl)}">Termos de uso</a>${cfg.legalEmConstrucao ? '<span class="fcol__sub"> · em construção</span>' : ''}` : '<span>Termos de uso</span><span class="fcol__sub"> · na tela de acesso do app</span>'}</li>
+          <li>${L.privacyUrl ? `<a href="${esc(L.privacyUrl)}">Política de privacidade</a>${cfg.legalEmConstrucao ? '<span class="fcol__sub"> · em construção</span>' : ''}` : '<span>Política de privacidade</span><span class="fcol__sub"> · na tela de acesso do app</span>'}</li>
         </ul>
       </div>
     </div>
@@ -186,3 +186,56 @@ html = html.replace(/\{\{state:(\w+)\}\}/g, (_, k) => esc(state[k] ?? ''));
 if (/\{\{|<!--#/.test(html)) { console.error('ERRO: diretivas não resolvidas no template'); process.exit(1); }
 fs.writeFileSync(path.join(root, 'site', 'index.html'), html);
 console.log('site/index.html gerado:', JSON.stringify(state));
+
+// ---- páginas legais (provisórias: "Em construção"; sem noindex apenas quando o conteúdo final existir)
+const legalPage = (file, titulo, corpo) => {
+  const wip = !!cfg.legalEmConstrucao;
+  const page = `<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${titulo} | Vida Atleta</title>
+<meta name="description" content="${titulo} do Vida Atleta, o aplicativo da CBDA.">
+<meta name="theme-color" content="#0d3e90">
+${wip || state.preview === 'true' ? '<meta name="robots" content="noindex, nofollow">' : ''}
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="legal-page">
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+${state.preview === 'true' ? '<aside class="preview-bar" aria-label="Aviso de prévia interna">Prévia interna · não publicar</aside>' : ''}
+<header class="site-header">
+  <div class="container site-header__in">
+    <a class="lockup" href="index.html" aria-label="Vida Atleta, CBDA, voltar ao início">
+      <img class="lockup__symbol" src="assets/img/symbol.svg" width="34" height="30" alt="">
+      <span class="lockup__text">Vida Atleta</span>
+      <span class="lockup__org"><img src="assets/img/cbda-shield.svg" width="22" height="28" alt=""><img src="assets/img/cbda-wordmark.svg" width="56" height="14" alt=""></span>
+    </a>
+    <a class="btn btn--primary btn--sm" href="index.html">Voltar ao site</a>
+  </div>
+</header>
+<main id="conteudo" class="legal">
+  <div class="container legal__in">
+    <p class="eyebrow eyebrow--ink">Documento legal</p>
+    <h1>${titulo}</h1>
+    <span class="friso friso--royal" aria-hidden="true"></span>
+    ${wip ? '<p class="legal__status" role="status">Em construção</p>' : ''}
+    ${corpo}
+    <p class="legal__actions"><a class="btn btn--primary" href="index.html">Voltar ao site</a> <a class="link-plain" href="${esc(L.cbdaSite || '#')}" target="_blank" rel="noopener noreferrer">Site da CBDA</a></p>
+  </div>
+</main>
+<footer class="site-footer site-footer--legal">
+  <div class="container"><p>© 2026 Vida Atleta. Aplicativo oficial da CBDA.</p></div>
+</footer>
+</body>
+</html>
+`;
+  fs.writeFileSync(path.join(root, 'site', file), page);
+};
+legalPage('termos-de-uso.html', 'Termos de uso', `<p>Os Termos de uso do Vida Atleta estão em construção e serão publicados aqui pela CBDA.</p>
+    <p>Enquanto isso, o aceite dos termos continua sendo feito na tela de acesso do aplicativo.</p>`);
+legalPage('politica-de-privacidade.html', 'Política de privacidade', `<p>A Política de privacidade do Vida Atleta está em construção e será publicada aqui pela CBDA.</p>
+    <p>Enquanto isso, as informações sobre privacidade continuam disponíveis na tela de acesso do aplicativo.</p>`);
+console.log('páginas legais geradas: termos-de-uso.html, politica-de-privacidade.html');
